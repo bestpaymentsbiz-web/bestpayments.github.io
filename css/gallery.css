@@ -1,0 +1,148 @@
+/* 갤러리 섹션 */
+.service-gallery {
+    padding: 80px 0;
+    background-color: #f8f9fa;
+}
+
+/* 갤러리 래퍼: 버튼과 스크롤 영역을 포함하며, 버튼 배치를 위해 position: relative 설정 */
+.gallery-wrapper {
+    position: relative;
+    margin: 0 -15px; /* 컨테이너의 패딩을 상쇄하여 버튼을 가장자리에 위치시키기 위함 */
+}
+
+/* 갤러리 그리드: 수평 스크롤 컨테이너 */
+.gallery-grid-scroll {
+    display: flex;
+    overflow-x: hidden; /* 스크롤바 숨김 */
+    overflow-y: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth; /* 부드러운 스크롤 효과 적용 */
+    padding: 0;
+    margin-top: 30px;
+}
+
+/* 스크롤바 숨김 (대부분의 브라우저에서 스크롤바가 완전히 사라짐) */
+.gallery-grid-scroll::-webkit-scrollbar {
+    display: none;
+}
+.gallery-grid-scroll {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+/* 갤러리 아이템 (카드) */
+.gallery-item {
+    flex: 0 0 auto;
+    width: 325px; 
+    background-color: #ffffff;
+    border-radius: 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-right: 0; 
+}
+
+.gallery-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+/* 썸네일 이미지 */
+.gallery-thumbnail {
+    width: auto;
+    height: 325px;
+    object-fit: cover;
+    display: block;
+}
+
+/* 캡션 */
+.gallery-caption {
+    padding: 15px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #333;
+    background-color: #f0f0f0;
+}
+
+/* --- 스크롤 버튼 스타일 --- */
+.scroll-btn {
+    position: absolute;
+    top: 50%; /* 갤러리 중앙에 위치 */
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 15px 10px;
+    cursor: pointer;
+    z-index: 50; /* 이미지 위에 버튼이 표시되도록 */
+    font-size: 1.5rem;
+    line-height: 1;
+    border-radius: 5px;
+    opacity: 0.8;
+    transition: opacity 0.3s, background 0.3s;
+}
+
+.scroll-btn:hover {
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 1;
+}
+
+.left-btn {
+    left: 0;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.right-btn {
+    right: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+/* --- 모달 (팝업) 스타일 --- (이전 코드와 동일) */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.9);
+}
+
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 900px;
+    max-height: 90vh;
+    object-fit: contain;
+}
+.modal-caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 50px;
+}

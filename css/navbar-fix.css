@@ -1,0 +1,45 @@
+/* 헤더 로고 이미지만 조정 — 나머지는 원본 style.css 그대로 */
+.logo img {
+    height: 52px !important;
+    width: auto !important;
+    display: block;
+    filter: none !important;   /* 원본 컬러 그대로 */
+    opacity: 1 !important;
+}
+
+/* 히어로 비디오 — 전체 화면 꽉 채움 강제 */
+.hero {
+    position: relative !important;
+    width: 100% !important;
+    height: 100vh !important;
+    overflow: hidden !important;
+}
+.bg-video {
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: center !important;
+    z-index: 0 !important;
+    transform: none !important;
+    min-width: unset !important;
+    min-height: unset !important;
+}
+.hero-background {
+    position: absolute !important;
+    inset: 0 !important;
+    background: rgba(0,0,0,.20) !important;
+    z-index: 1 !important;
+}
+.hero .container,
+.hero > .container {
+    position: relative !important;
+    z-index: 2 !important;
+}
+
+/* 푸터 로고 박스 여백 정리 */
+.footer-logo {
+    margin-bottom: 1.2rem;
+}

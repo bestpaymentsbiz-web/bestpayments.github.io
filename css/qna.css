@@ -1,0 +1,359 @@
+/* ========================================
+   QNA Page Specific Styles
+======================================== */
+
+/* QNA Hero */
+.qna-hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: 150px 0 80px;
+    text-align: center;
+    color: var(--white);
+    position: relative;
+    overflow: hidden;
+}
+
+.qna-hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>');
+    opacity: 0.3;
+}
+
+.qna-hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.qna-hero h1 {
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 1rem;
+}
+
+.qna-hero p {
+    font-size: 1.3rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.95;
+}
+
+.search-box {
+    max-width: 600px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.search-box i {
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2rem;
+    color: var(--text-gray);
+}
+
+.search-box input {
+    width: 100%;
+    padding: 1rem 1rem 1rem 3.5rem;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition);
+}
+
+.search-box input:focus {
+    outline: none;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* QNA Categories */
+.qna-categories {
+    background: var(--white);
+    padding: 2rem 0;
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 70px;
+    z-index: 100;
+}
+
+.categories-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.category-tab {
+    background: var(--bg-light);
+    border: 2px solid transparent;
+    padding: 0.8rem 1.5rem;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    cursor: pointer;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.category-tab i {
+    font-size: 1.1rem;
+}
+
+.category-tab:hover {
+    background: var(--light-blue);
+    color: var(--primary-color);
+}
+
+.category-tab.active {
+    background: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
+}
+
+/* QNA List */
+.qna-list {
+    padding: 4rem 0;
+    background: var(--bg-light);
+}
+
+.qna-item {
+    background: var(--white);
+    margin-bottom: 1.5rem;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: var(--transition);
+}
+
+.qna-item.hidden {
+    display: none;
+}
+
+.qna-item:hover {
+    box-shadow: var(--shadow-lg);
+}
+
+.qna-question {
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    transition: var(--transition);
+}
+
+.qna-question:hover {
+    background: var(--light-blue);
+}
+
+.qna-question h3 {
+    font-size: 1.2rem;
+    color: var(--text-dark);
+    font-weight: 600;
+    margin: 0;
+}
+
+.qna-question i {
+    font-size: 1.2rem;
+    color: var(--primary-color);
+    transition: transform 0.3s ease;
+}
+
+.qna-item.active .qna-question i {
+    transform: rotate(180deg);
+}
+
+.qna-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.qna-item.active .qna-answer {
+    max-height: 1000px;
+}
+
+.qna-answer {
+    padding: 0 2rem;
+}
+
+.qna-item.active .qna-answer {
+    padding: 0 2rem 2rem 2rem;
+}
+
+.qna-answer p {
+    color: var(--text-gray);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.qna-answer ul,
+.qna-answer ol {
+    color: var(--text-gray);
+    line-height: 1.8;
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.qna-answer ul li,
+.qna-answer ol li {
+    margin-bottom: 0.5rem;
+}
+
+.qna-answer strong {
+    color: var(--text-dark);
+    font-weight: 600;
+}
+
+.qna-answer em {
+    color: var(--text-gray);
+    font-size: 0.9rem;
+}
+
+/* QNA Contact Section */
+.qna-contact {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: 5rem 0;
+    text-align: center;
+    color: var(--white);
+}
+
+.qna-contact-content i {
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+    display: block;
+    opacity: 0.9;
+}
+
+.qna-contact-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.qna-contact-content p {
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    opacity: 0.95;
+}
+
+.contact-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-buttons .btn {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.contact-buttons .btn i {
+    font-size: 1.1rem;
+}
+
+/* Highlight Search Results */
+.highlight {
+    background-color: yellow;
+    font-weight: bold;
+    padding: 2px 4px;
+    border-radius: 3px;
+}
+
+/* Empty State */
+.empty-state {
+    text-align: center;
+    padding: 4rem 0;
+    color: var(--text-gray);
+}
+
+.empty-state i {
+    font-size: 4rem;
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.empty-state h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.empty-state p {
+    font-size: 1.1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+    .qna-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .qna-hero p {
+        font-size: 1.1rem;
+    }
+
+    .categories-tabs {
+        gap: 0.5rem;
+    }
+
+    .category-tab {
+        padding: 0.6rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .qna-question {
+        padding: 1.2rem 1.5rem;
+    }
+
+    .qna-question h3 {
+        font-size: 1.1rem;
+    }
+
+    .qna-answer {
+        padding: 0 1.5rem;
+    }
+
+    .qna-item.active .qna-answer {
+        padding: 0 1.5rem 1.5rem 1.5rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .qna-hero {
+        padding: 120px 0 60px;
+    }
+
+    .qna-hero h1 {
+        font-size: 2rem;
+    }
+
+    .category-tab {
+        flex: 1 1 calc(50% - 0.5rem);
+        justify-content: center;
+    }
+
+    .qna-contact-content h2 {
+        font-size: 2rem;
+    }
+
+    .contact-buttons {
+        flex-direction: column;
+    }
+
+    .contact-buttons .btn {
+        width: 100%;
+        justify-content: center;
+    }
+}

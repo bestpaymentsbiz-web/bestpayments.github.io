@@ -1,0 +1,55 @@
+/* 화면 전체를 덮는 어두운 배경 */
+.popup-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   /* 뒷배경 어둡게 */
+    display: flex;
+    flex-direction: row;    /* 여러 개일 때 가로로 나열 (세로를 원하면 column) */
+    justify-content: center; /* 가로 중앙 */
+    align-items: center;     /* 세로 중앙 */
+    gap: 20px;
+    z-index: 10000;
+}
+
+/* 팝업 몸체 */
+.popup-card {
+    width: 500px; /* 이미지 크기에 맞춰 조절하세요 */
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.popup-content img {
+    width: 100%;
+    display: block;
+}
+
+/* 하단 바 */
+.popup-footer {
+    background: #222;
+    color: #fff;
+    padding: 8px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+}
+
+.popup-footer label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.close-btn {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+}
