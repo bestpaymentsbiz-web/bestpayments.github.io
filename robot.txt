@@ -1,0 +1,22 @@
+User-agent: *
+Allow: /
+
+# 이 파일이 있는 루트에 사이트맵을 개인 도메인 주소로 명시합니다.
+Sitemap: https://best-payments.com.com/sitemap.xml
+
+User-agent: *
+Disallow: /
+Allow: /index.html
+Allow: /assets/
+
+# Bingbot 허용
+User-agent: bingbot
+Allow: /
+Allow: /index.html
+Allow: /assets/
+
+# Naver Yeti 허용
+User-agent: Yeti
+Allow: /
+Allow: /index.html
+Allow: /assets/
