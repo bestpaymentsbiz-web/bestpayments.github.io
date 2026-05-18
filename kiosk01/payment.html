@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>전자결제 대행 - 베스트페이먼츠 BestPayments</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans KR', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+    
+    <nav id="navbar" class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center text-2xl font-bold text-primary">
+                    <img src="img/ringo.png" alt="링고 이미지" class="h-12 w-auto mr-2">
+					<span class="leading-none">링고</span>
+                </a>
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html#home" class="text-gray-700 hover:text-primary transition">홈</a>
+                    <a href="index.html#solutions" class="text-gray-700 hover:text-primary transition">솔루션</a>
+                    <a href="index.html#products" class="text-gray-700 hover:text-primary transition">제품</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-primary transition">회사소개</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-primary transition">고객지원</a>
+                    <a href="index.html#contact" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">도입문의</a>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden"><i class="fas fa-bars text-2xl"></i></button>
+            </div>
+            <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html#home" class="text-gray-700">홈</a>
+                    <a href="index.html#solutions" class="text-gray-700">솔루션</a>
+                    <a href="index.html#products" class="text-gray-700">제품</a>
+                    <a href="index.html#about" class="text-gray-700">회사소개</a>
+                    <a href="index.html#contact" class="text-gray-700">고객지원</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="pt-32 pb-16 bg-gradient-to-br from-purple-50 to-white">
+        <div class="container mx-auto px-6 text-center max-w-4xl">
+            <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+                전자결제 <span class="text-purple-600">대행 서비스</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-8">
+                안전하고 빠른 결제 처리, 신뢰할 수 있는 정산 서비스
+            </p>
+            <a href="index.html#contact" class="inline-block bg-purple-600 text-white px-8 py-4 rounded-lg hover:bg-purple-700 transition font-semibold">
+                서비스 신청
+            </a>
+        </div>
+    </section>
+    
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">다양한 결제 수단</h2>
+                <p class="text-xl text-gray-600">모든 결제 방식을 하나의 서비스로</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center p-6 bg-gradient-to-br from-purple-50 to-white rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-credit-card text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">신용카드</h3>
+                    <p class="text-gray-600 text-sm">국내외 모든 신용카드</p>
+                </div>
+                <div class="text-center p-6 bg-gradient-to-br from-purple-50 to-white rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-mobile-alt text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">간편결제</h3>
+                    <p class="text-gray-600 text-sm">카카오페이, 네이버페이 등</p>
+                </div>
+                <div class="text-center p-6 bg-gradient-to-br from-purple-50 to-white rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-phone text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">휴대폰 결제</h3>
+                    <p class="text-gray-600 text-sm">통신사 소액결제</p>
+                </div>
+                <div class="text-center p-6 bg-gradient-to-br from-purple-50 to-white rounded-xl shadow-lg">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                        <i class="fas fa-university text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-2">계좌이체</h3>
+                    <p class="text-gray-600 text-sm">실시간 계좌이체</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">서비스 특징</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">최고 수준의 보안</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>PCI-DSS 인증</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>256bit SSL 암호화</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>개인정보 비저장</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>부정거래 탐지</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-bolt text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">빠른 처리 속도</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>1초 이내 승인</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>99.9% 가동률</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>실시간 처리</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>대용량 트래픽 대응</li>
+                    </ul>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <div class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-calculator text-3xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">투명한 정산</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>실시간 정산</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>D+1 ~ D+3 정산</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>자동 세금계산서</li>
+                        <li><i class="fas fa-check text-purple-600 mr-2"></i>상세 거래 리포트</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">수수료 안내</h2>
+                <p class="text-xl text-gray-600">업계 최저 수준의 합리적인 수수료</p>
+            </div>
+            <div class="max-w-3xl mx-auto">
+                <table class="w-full bg-white rounded-xl shadow-lg overflow-hidden">
+                    <thead class="bg-purple-600 text-white">
+                        <tr>
+                            <th class="px-6 py-4 text-left">결제 수단</th>
+                            <th class="px-6 py-4 text-center">수수료율</th>
+                            <th class="px-6 py-4 text-center">정산일</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-semibold">신용카드</td>
+                            <td class="px-6 py-4 text-center text-purple-600 font-bold">2.5% ~</td>
+                            <td class="px-6 py-4 text-center">D+3</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-semibold">간편결제</td>
+                            <td class="px-6 py-4 text-center text-purple-600 font-bold">2.8% ~</td>
+                            <td class="px-6 py-4 text-center">D+2</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-semibold">계좌이체</td>
+                            <td class="px-6 py-4 text-center text-purple-600 font-bold">1.5% ~</td>
+                            <td class="px-6 py-4 text-center">D+1</td>
+                        </tr>
+                        <!--<tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-semibold">휴대폰 결제</td>
+                            <td class="px-6 py-4 text-center text-purple-600 font-bold">4.0% ~</td>
+                            <td class="px-6 py-4 text-center">D+3</td>
+                        </tr>-->
+                    </tbody>
+                </table>
+                <p class="text-center text-gray-600 mt-6">* 거래량에 따라 우대 수수료가 적용됩니다.</p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-20 bg-gradient-to-br from-purple-600 to-indigo-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">지금 바로 시작하세요</h2>
+            <p class="text-xl mb-8 opacity-90">간편한 신청 절차로 빠르게 결제 서비스를 도입하세요</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html#contact" class="bg-white text-purple-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition font-semibold">
+                    서비스 신청하기
+                </a>
+                <a href="index.html" class="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-purple-600 transition font-semibold">
+                    홈으로 돌아가기
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+					<h4 class="text-2xl font-bold mb-4">
+                        <i class="fas fa-layer-group mr-2"></i>
+                        베스트페이먼츠 BestPayments, Ringo
+                    </h4>
+                    <p class="text-gray-400 mb-4">
+                        전자결제 솔루션의 선두주자<br>
+                   주식회사 링고</p>
+                    <!--<h4 class="text-2xl font-bold mb-4"><i class="fas fa-layer-group mr-2"></i>베스트페이먼츠 BestPayments</h4>
+                    <p class="text-gray-400">전자결제 솔루션의 선두주자</p>-->
+                </div>
+                <div>
+                    <h5 class="text-lg font-bold mb-4">제품</h5>
+                    <ul class="space-y-2">
+                        <li><a href="kiosk.html" class="text-gray-400 hover:text-white">키오스크</a></li>
+                        <li><a href="pos.html" class="text-gray-400 hover:text-white">POS 시스템</a></li>
+                        <li><a href="unmanned.html" class="text-gray-400 hover:text-white">무인결제</a></li>
+                        <li><a href="payment.html" class="text-gray-400 hover:text-white">전자결제 대행</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-lg font-bold mb-4">회사</h5>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#about" class="text-gray-400 hover:text-white">회사소개</a></li>
+                        <li><a href="index.html#contact" class="text-gray-400 hover:text-white">고객지원</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-lg font-bold mb-4">연락처</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i>1522-7267</li>
+                        <li><i class="fas fa-envelope mr-2"></i>hnb2022@naver.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>서울특별시 서초구 서초대로55길 17</li>
+						<li><i class="fas fa-map-marker-alt mr-2"></i>경기도 안산시 단원구 고잔동 757-1</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 베스트페이먼츠 BestPayments 주식회사. 링고 주식회사. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <button id="scroll-top" class="fixed bottom-8 right-8 bg-purple-600 text-white w-12 h-12 rounded-full shadow-lg hover:bg-purple-700 transition opacity-0 pointer-events-none">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+

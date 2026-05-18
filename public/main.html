@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>메인 페이지</title>
+</head>
+<body>
+    <h2>환영합니다!</h2>
+    <p>로그인에 성공했습니다. 이곳은 회원만 접근 가능한 페이지입니다.</p>
+
+    <button id="logoutButton">로그아웃</button>
+
+    <script>
+        document.getElementById('logoutButton').addEventListener('click', function() {
+            fetch('/logout', {
+                method: 'POST',
+            })
+            .then(response => response.json())
+            .then(result => {
+                if (result.success) {
+                    alert('로그아웃되었습니다.');
+                    window.location.href = '/login';
+                } else {
+                    alert('로그아웃 실패');
+                }
+            })
+            .catch(error => {
+                alert('서버 통신 오류로 로그아웃 실패');
+            });
+        });
+    </script>
+</body>
+</html>

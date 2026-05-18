@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>키오스크 솔루션 - 베스트페이먼츠 BestPayments</title>
+    <meta name="description" content="베스트페이먼츠 BestPayments의 다양한 키오스크 솔루션을 만나보세요. 24인치, 32인치 모델로 완벽한 무인주문 시스템을 구현하세요.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#60a5fa',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans KR', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full bg-white shadow-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center text-2xl font-bold text-primary">
+						<img src="img/ringo.png" alt="링고 이미지" class="h-12 w-auto mr-2">
+						<span class="leading-none">링고</span>
+					</a>
+                </div>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+					<a href="../index.html" class="text-gray-700 hover:text-primary transition">메인</a>
+                    <a href="index.html#home" class="text-gray-700 hover:text-primary transition">홈</a>
+                    <a href="index.html#solutions" class="text-gray-700 hover:text-primary transition">솔루션</a>
+                    <a href="index.html#products" class="text-gray-700 hover:text-primary transition">제품</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-primary transition">회사소개</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-primary transition">고객지원</a>
+                    <a href="index.html#contact" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+                        도입문의
+                    </a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="lg:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html#home" class="text-gray-700 hover:text-primary transition">홈</a>
+                    <a href="index.html#solutions" class="text-gray-700 hover:text-primary transition">솔루션</a>
+                    <a href="index.html#products" class="text-gray-700 hover:text-primary transition">제품</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-primary transition">회사소개</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-primary transition">고객지원</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-blue-50 to-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+                    키오스크 <span class="text-primary">솔루션</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8">
+                    완벽한 무인주문 시스템으로 인건비 절감과 매출 극대화를 동시에 실현하세요
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#products" class="bg-primary text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition font-semibold">
+                        제품 비교하기
+                    </a>
+                    <a href="index.html#contact" class="bg-white text-primary border-2 border-primary px-8 py-4 rounded-lg hover:bg-blue-50 transition font-semibold">
+                        도입 문의
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Benefits Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">왜 키오스크인가?</h2>
+                <p class="text-xl text-gray-600">비즈니스 혁신을 위한 필수 솔루션</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-lg p-8">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-won-sign text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">인건비 절감</h3>
+                    <p class="text-gray-600 mb-4">하루 3,000원으로 24시간 무인 운영 가능</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>연간 인건비 90% 절감</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>24시간 무인 운영</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>인력 배치 최소화</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-lg p-8">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">매출 증대</h3>
+                    <p class="text-gray-600 mb-4">평균 주문 금액 25% 증가 효과</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>업셀링 자동화</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>주문 오류 감소</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>회전율 향상</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-lg p-8">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">고객 만족</h3>
+                    <p class="text-gray-600 mb-4">대기 시간 단축 및 주문 편의성 향상</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>빠른 주문 처리</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>4개국어 지원</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>쉬운 UI/UX</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-lg p-8">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-database text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">데이터 관리</h3>
+                    <p class="text-gray-600 mb-4">실시간 매출 및 재고 관리</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>실시간 대시보드</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>매출 분석 리포트</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>재고 자동 관리</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-lg p-8">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">안전한 결제</h3>
+                    <p class="text-gray-600 mb-4">PCI-DSS 인증 보안 시스템</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>암호화된 결제</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>다양한 결제 수단</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>99.9% 안정성</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-lg p-8">
+                    <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-headset text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">24/7 지원</h3>
+                    <p class="text-gray-600 mb-4">언제나 함께하는 기술 지원팀</p>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>24시간 고객 지원</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>원격 모니터링</li>
+                        <li><i class="fas fa-check text-green-500 mr-2"></i>정기 점검 서비스</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">제품 라인업</h2>
+                <p class="text-xl text-gray-600">매장 규모와 업종에 맞는 최적의 키오스크</p>
+            </div>
+            
+            <!-- Product 1: 24" Card Only -->
+            <div id="product-24c" class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="bg-gradient-to-br from-blue-400 to-blue-600 p-16 flex items-center justify-center">
+                        <!--<i class="fas fa-laptop text-white text-9xl"></i>-->
+						<img src="img/sub/img_card_kiosk_01.png" 
+						 alt="card_kiosk_01" 
+						 class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-10">
+                        <span class="text-sm font-semibold text-primary bg-blue-100 px-3 py-1 rounded-full">외식업 추천</span>
+                        <h3 class="text-3xl font-bold text-gray-900 mt-4 mb-4">24인치 카드전용 키오스크</h3>
+                        <p class="text-xl text-gray-600 mb-6">소형 매장에 최적화된 데스크형, 스탠드형 모델</p>
+                        
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold text-gray-900 mb-4">주요 특징</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-primary text-xl mr-3 mt-1"></i>
+                                    <span class="text-gray-700"><strong>24인치 Full HD 터치스크린:</strong> 선명한 화질과 빠른 반응속도</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-primary text-xl mr-3 mt-1"></i>
+                                    <span class="text-gray-700"><strong>카드 결제 전용:</strong> IC칩, 마그네틱, NFC 결제 지원</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-primary text-xl mr-3 mt-1"></i>
+                                    <span class="text-gray-700"><strong>공간 효율:</strong> 소형 매장에 적합한 컴팩트 디자인</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-primary text-xl mr-3 mt-1"></i>
+                                    <span class="text-gray-700"><strong>두 가지 타입:</strong> 데스크형, 스탠드형 선택 가능</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold text-gray-900 mb-4">사양</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-600 mb-1">화면 크기</div>
+                                    <div class="font-bold text-gray-900">24인치</div>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-600 mb-1">결제 방식</div>
+                                    <div class="font-bold text-gray-900">카드 전용</div>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-600 mb-1">프로세서</div>
+                                    <div class="font-bold text-gray-900">Intel i5</div>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-600 mb-1">메모리</div>
+                                    <div class="font-bold text-gray-900">8GB RAM</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <a href="index.html#contact" class="flex-1 bg-primary text-white text-center py-4 rounded-lg hover:bg-blue-700 transition font-semibold">
+                                도입 문의
+                            </a>
+                            <button class="px-6 py-4 border-2 border-primary text-primary rounded-lg hover:bg-blue-50 transition font-semibold">
+                                카탈로그 다운로드
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 2: 24" Cash/Card -->
+            <div id="product-24cm" class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="bg-gradient-to-br from-purple-400 to-purple-600 p-16 flex items-center justify-center lg:order-2">
+                        <!-- <i class="fas fa-desktop text-white text-9xl"></i>-->
+						<img src="img/sub/kiosk_2.png" 
+						 alt="kiosk_2" 
+						 class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-10 lg:order-1">
+                        <span class="text-sm font-semibold text-primary bg-blue-100 px-3 py-1 rounded-full">완전 무인화</span>
+                        <h3 class="text-3xl font-bold text-gray-900 mt-4 mb-4">24인치 현금/카드겸용 키오스크</h3>
+                        <p class="text-xl text-gray-600 mb-6">완전 무인화를 실현하는 스탠드형 모델</p>
+                        
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold text-gray-900 mb-4">주요 특징</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-primary text-xl mr-3 mt-1"></i>
+                                    <span class="text-gray-700"><strong>현금/카드 겸용:</strong> 지폐, 동전 입출금 시스템 내장</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-primary text-xl mr-3 mt-1"></i>
+                                    <span class="text-gray-700"><strong>완전 무인화:</strong> 직원 없이 독립 운영 가능</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-primary text-xl mr-3 mt-1"></i>
+                                    <span class="text-gray-700"><strong>스탠드형 디자인:</strong> 안정적이고 세련된 외관</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-primary text-xl mr-3 mt-1"></i>
+                                    <span class="text-gray-700"><strong>영수증 프린터:</strong> 고속 열전사 프린터 내장</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold text-gray-900 mb-4">사양</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-600 mb-1">화면 크기</div>
+                                    <div class="font-bold text-gray-900">24인치</div>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-600 mb-1">결제 방식</div>
+                                    <div class="font-bold text-gray-900">현금/카드 겸용</div>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-600 mb-1">현금 수용</div>
+                                    <div class="font-bold text-gray-900">지폐/동전</div>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-600 mb-1">타입</div>
+                                    <div class="font-bold text-gray-900">스탠드형</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <a href="index.html#contact" class="flex-1 bg-primary text-white text-center py-4 rounded-lg hover:bg-blue-700 transition font-semibold">
+                                도입 문의
+                            </a>
+                            <button class="px-6 py-4 border-2 border-primary text-primary rounded-lg hover:bg-blue-50 transition font-semibold">
+                                카탈로그 다운로드
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 3: 22" Retail -->
+            <div id="product-22retail" class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="bg-gradient-to-br from-green-400 to-green-600 p-16 flex items-center justify-center">
+                        <!-- <i class="fas fa-store text-white text-9xl"></i> -->
+						<img src="img/sub/kiosk_22.png" 
+						 alt="kiosk_22" 
+						 class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-10">
+                        <span class="text-sm font-semibold text-green-600 bg-green-100 px-3 py-1 rounded-full">유통업 특화</span>
+                        <h3 class="text-3xl font-bold text-gray-900 mt-4 mb-4">22인치 유통형 키오스크</h3>
+                        <p class="text-xl text-gray-600 mb-6">무인 편의점, 아이스크림 매장에 최적화</p>
+                        
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold text-gray-900 mb-4">주요 특징</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-600 text-xl mr-3 mt-1"></i>
+                                    <span class="text-gray-700"><strong>탁상형 디자인:</strong> 카운터에 설치 가능한 컴팩트 사이즈</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-600 text-xl mr-3 mt-1"></i>
+                                    <span class="text-gray-700"><strong>바코드 스캐너:</strong> 상품 바코드 인식 기능</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-600 text-xl mr-3 mt-1"></i>
+                                    <span class="text-gray-700"><strong>현금/카드 겸용:</strong> 다양한 결제 수단 지원</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-green-600 text-xl mr-3 mt-1"></i>
+                                    <span class="text-gray-700"><strong>무인 매장 최적화:</strong> 재고 연동 및 자동 정산</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold text-gray-900 mb-4">사양</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-600 mb-1">화면 크기</div>
+                                    <div class="font-bold text-gray-900">22인치</div>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-600 mb-1">타입</div>
+                                    <div class="font-bold text-gray-900">탁상형</div>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-600 mb-1">바코드 스캐너</div>
+                                    <div class="font-bold text-gray-900">1D/2D 지원</div>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-600 mb-1">추천 업종</div>
+                                    <div class="font-bold text-gray-900">편의점/유통</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <a href="index.html#contact" class="flex-1 bg-green-600 text-white text-center py-4 rounded-lg hover:bg-green-700 transition font-semibold">
+                                도입 문의
+                            </a>
+                            <button class="px-6 py-4 border-2 border-green-600 text-green-600 rounded-lg hover:bg-green-50 transition font-semibold">
+                                카탈로그 다운로드
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product 4: 32" Card Only -->
+            <div id="product-32c" class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="bg-gradient-to-br from-indigo-400 to-indigo-600 p-16 flex items-center justify-center lg:order-2">
+                        <!-- <i class="fas fa-tv text-white text-9xl"></i> -->
+						<img src="img/sub/img_card_cash_kiosk_12.png" 
+						 alt="retail_01" 
+						 class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-10 lg:order-1">
+                        <span class="text-sm font-semibold text-primary bg-blue-100 px-3 py-1 rounded-full">프리미엄</span>
+                        <h3 class="text-3xl font-bold text-gray-900 mt-4 mb-4">32인치 카드전용 키오스크</h3>
+                        <p class="text-xl text-gray-600 mb-6">중대형 매장을 위한 프리미엄 모델</p>
+                        
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold text-gray-900 mb-4">주요 특징</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-primary text-xl mr-3 mt-1"></i>
+                                    <span class="text-gray-700"><strong>32인치 대형 화면:</strong> 시인성이 뛰어난 Full HD 디스플레이</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-primary text-xl mr-3 mt-1"></i>
+                                    <span class="text-gray-700"><strong>프리미엄 디자인:</strong> 고급스러운 외관과 견고한 구조</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-primary text-xl mr-3 mt-1"></i>
+                                    <span class="text-gray-700"><strong>고성능 하드웨어:</strong> 빠른 주문 처리 속도</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-primary text-xl mr-3 mt-1"></i>
+                                    <span class="text-gray-700"><strong>중대형 매장 최적:</strong> 많은 고객 동시 이용 가능</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold text-gray-900 mb-4">사양</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-600 mb-1">화면 크기</div>
+                                    <div class="font-bold text-gray-900">32인치</div>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-600 mb-1">결제 방식</div>
+                                    <div class="font-bold text-gray-900">카드 전용</div>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-600 mb-1">프로세서</div>
+                                    <div class="font-bold text-gray-900">Intel i7</div>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-600 mb-1">메모리</div>
+                                    <div class="font-bold text-gray-900">16GB RAM</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <a href="index.html#contact" class="flex-1 bg-primary text-white text-center py-4 rounded-lg hover:bg-blue-700 transition font-semibold">
+                                도입 문의
+                            </a>
+                            <button class="px-6 py-4 border-2 border-primary text-primary rounded-lg hover:bg-blue-50 transition font-semibold">
+                                카탈로그 다운로드
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			
+           
+            <!-- Product 5: 32" Cash/Card -->
+            <div id="product-32cm" class="bg-white rounded-2xl shadow-xl overflow-hidden mb-12">
+                <div class="grid grid-cols-1 lg:grid-cols-2">
+                    <div class="bg-white p-16 flex items-center justify-center">
+                        <!-- <i class="fas fa-cash-register text-white text-9xl"></i> -->
+						<img src="img/sub/img_card_cash_kiosk_13.png" 
+						 alt="retail_01" 
+						 class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-10">
+                        <span class="text-sm font-semibold text-red-600 bg-red-100 px-3 py-1 rounded-full">최상위 모델</span>
+                        <h3 class="text-3xl font-bold text-gray-900 mt-4 mb-4">32인치 현금/카드겸용 키오스크</h3>
+                        <p class="text-xl text-gray-600 mb-6">완전 무인화 프리미엄 솔루션</p>
+                        
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold text-gray-900 mb-4">주요 특징</h4>
+                            <ul class="space-y-3">
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-red-600 text-xl mr-3 mt-1"></i>
+                                    <span class="text-gray-700"><strong>32인치 대형 화면:</strong> 최고의 사용자 경험 제공</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-red-600 text-xl mr-3 mt-1"></i>
+                                    <span class="text-gray-700"><strong>현금/카드 겸용:</strong> 모든 결제 수단 완벽 지원</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-red-600 text-xl mr-3 mt-1"></i>
+                                    <span class="text-gray-700"><strong>최상위 사양:</strong> Intel i7 프로세서, 16GB RAM</span>
+                                </li>
+                                <li class="flex items-start">
+                                    <i class="fas fa-check-circle text-red-600 text-xl mr-3 mt-1"></i>
+                                    <span class="text-gray-700"><strong>프리미엄 외관:</strong> 전면 강화유리, 메탈 프레임</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="mb-8">
+                            <h4 class="text-xl font-bold text-gray-900 mb-4">사양</h4>
+                            <div class="grid grid-cols-2 gap-4">
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-600 mb-1">화면 크기</div>
+                                    <div class="font-bold text-gray-900">32인치</div>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-600 mb-1">결제 방식</div>
+                                    <div class="font-bold text-gray-900">현금/카드 겸용</div>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-600 mb-1">프로세서</div>
+                                    <div class="font-bold text-gray-900">Intel i7</div>
+                                </div>
+                                <div class="bg-gray-50 p-4 rounded-lg">
+                                    <div class="text-sm text-gray-600 mb-1">등급</div>
+                                    <div class="font-bold text-gray-900">프리미엄</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex gap-4">
+                            <a href="index.html#contact" class="flex-1 bg-red-600 text-white text-center py-4 rounded-lg hover:bg-red-700 transition font-semibold">
+                                도입 문의
+                            </a>
+                            <button class="px-6 py-4 border-2 border-red-600 text-red-600 rounded-lg hover:bg-red-50 transition font-semibold">
+                                카탈로그 다운로드
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Comparison Table -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">제품 비교</h2>
+                <p class="text-xl text-gray-600">매장에 맞는 최적의 제품을 선택하세요</p>
+            </div>
+            
+            <div class="overflow-x-auto">
+                <table class="w-full bg-white rounded-xl shadow-lg overflow-hidden">
+                    <thead class="bg-primary text-white">
+                        <tr>
+                            <th class="px-6 py-4 text-left">모델</th>
+                            <th class="px-6 py-4 text-center">화면</th>
+                            <th class="px-6 py-4 text-center">결제</th>
+                            <th class="px-6 py-4 text-center">타입</th>
+                            <th class="px-6 py-4 text-center">추천 업종</th>
+                            <th class="px-6 py-4 text-center">가격</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-200">
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-semibold">24" 카드전용</td>
+                            <td class="px-6 py-4 text-center">24인치</td>
+                            <td class="px-6 py-4 text-center">카드</td>
+                            <td class="px-6 py-4 text-center">데스크/스탠드</td>
+                            <td class="px-6 py-4 text-center">소형 외식</td>
+                            <td class="px-6 py-4 text-center text-primary font-bold">문의</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-semibold">24" 현금/카드겸용</td>
+                            <td class="px-6 py-4 text-center">24인치</td>
+                            <td class="px-6 py-4 text-center">현금/카드</td>
+                            <td class="px-6 py-4 text-center">스탠드</td>
+                            <td class="px-6 py-4 text-center">외식</td>
+                            <td class="px-6 py-4 text-center text-primary font-bold">문의</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-semibold">22" 유통형</td>
+                            <td class="px-6 py-4 text-center">22인치</td>
+                            <td class="px-6 py-4 text-center">현금/카드</td>
+                            <td class="px-6 py-4 text-center">탁상</td>
+                            <td class="px-6 py-4 text-center">유통/편의점</td>
+                            <td class="px-6 py-4 text-center text-primary font-bold">문의</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-semibold">32" 카드전용</td>
+                            <td class="px-6 py-4 text-center">32인치</td>
+                            <td class="px-6 py-4 text-center">카드</td>
+                            <td class="px-6 py-4 text-center">스탠드</td>
+                            <td class="px-6 py-4 text-center">중대형 외식</td>
+                            <td class="px-6 py-4 text-center text-primary font-bold">문의</td>
+                        </tr>
+                        <tr class="hover:bg-gray-50">
+                            <td class="px-6 py-4 font-semibold">32" 현금/카드겸용</td>
+                            <td class="px-6 py-4 text-center">32인치</td>
+                            <td class="px-6 py-4 text-center">현금/카드</td>
+                            <td class="px-6 py-4 text-center">스탠드</td>
+                            <td class="px-6 py-4 text-center">프리미엄</td>
+                            <td class="px-6 py-4 text-center text-primary font-bold">문의</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div class="text-center mt-8">
+                <p class="text-gray-600 mb-4">정확한 가격은 도입 규모와 옵션에 따라 달라질 수 있습니다.</p>
+                <a href="index.html#contact" class="inline-block bg-primary text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition font-semibold">
+                    견적 문의하기
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-primary to-blue-700 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">지금 바로 시작하세요</h2>
+            <p class="text-xl mb-8 opacity-90">베스트페이먼츠 BestPayments의 키오스크 솔루션으로 비즈니스를 혁신하세요</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html#contact" class="bg-white text-primary px-8 py-4 rounded-lg hover:bg-gray-100 transition font-semibold">
+                    무료 상담 신청
+                </a>
+                <a href="index.html" class="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-primary transition font-semibold">
+                    홈으로 돌아가기
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                 <div>
+                    <h4 class="text-2xl font-bold mb-4">
+                        <i class="fas fa-layer-group mr-2"></i>
+                        베스트페이먼츠 BestPayments, Ringo
+                    </h4>
+                    <p class="text-gray-400 mb-4">
+                        전자결제 솔루션의 선두주자<br>
+                   주식회사 링고</p>
+                </div>
+                
+                <div>
+                    <h5 class="text-lg font-bold mb-4">제품</h5>
+                    <ul class="space-y-2">
+                        <li><a href="#product-24c" class="text-gray-400 hover:text-white transition">24" 카드전용</a></li>
+                        <li><a href="#product-24cm" class="text-gray-400 hover:text-white transition">24" 현금/카드겸용</a></li>
+                        <li><a href="#product-22retail" class="text-gray-400 hover:text-white transition">22" 유통형</a></li>
+                        <li><a href="#product-32c" class="text-gray-400 hover:text-white transition">32" 카드전용</a></li>
+                        <li><a href="#product-32cm" class="text-gray-400 hover:text-white transition">32" 현금/카드겸용</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 class="text-lg font-bold mb-4">빠른 링크</h5>
+                    <ul class="space-y-2">
+                        <li><a href="pos.html" class="text-gray-400 hover:text-white transition">POS 시스템</a></li>
+                        <li><a href="unmanned.html" class="text-gray-400 hover:text-white transition">무인결제</a></li>
+                        <li><a href="payment.html" class="text-gray-400 hover:text-white transition">전자결제 대행</a></li>
+                        <li><a href="index.html#about" class="text-gray-400 hover:text-white transition">회사소개</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 class="text-lg font-bold mb-4">연락처</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i>1522-7267</li>
+                        <li><i class="fas fa-envelope mr-2"></i>hnb2022@naver.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>서울특별시 서초구 서초대로55길 17</li>
+						<li><i class="fas fa-map-marker-alt mr-2"></i>경기도 안산시 단원구 고잔동 757-1</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 베스트페이먼츠 BestPayments 주식회사. 주식회사 링고. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full shadow-lg hover:bg-blue-700 transition opacity-0 pointer-events-none">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>

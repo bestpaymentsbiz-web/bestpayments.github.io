@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>무인결제 시스템 - 베스트페이먼츠 BestPayments</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans KR', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+    
+    <nav id="navbar" class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="flex items-center text-2xl font-bold text-primary">
+                    <img src="img/ringo.png" alt="링고 이미지" class="h-12 w-auto mr-2">
+					<span class="leading-none">링고</span>
+                </a>
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html#home" class="text-gray-700 hover:text-primary transition">홈</a>
+                    <a href="index.html#solutions" class="text-gray-700 hover:text-primary transition">솔루션</a>
+                    <a href="index.html#products" class="text-gray-700 hover:text-primary transition">제품</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-primary transition">회사소개</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-primary transition">고객지원</a>
+                    <a href="index.html#contact" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">도입문의</a>
+                </div>
+                <button id="mobile-menu-btn" class="lg:hidden"><i class="fas fa-bars text-2xl"></i></button>
+            </div>
+            <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html#home" class="text-gray-700">홈</a>
+                    <a href="index.html#solutions" class="text-gray-700">솔루션</a>
+                    <a href="index.html#products" class="text-gray-700">제품</a>
+                    <a href="index.html#about" class="text-gray-700">회사소개</a>
+                    <a href="index.html#contact" class="text-gray-700">고객지원</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <section class="pt-32 pb-16 bg-gradient-to-br from-green-50 to-white">
+        <div class="container mx-auto px-6 text-center max-w-4xl">
+            <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+                무인결제 <span class="text-green-600">시스템</span>
+            </h1>
+            <p class="text-xl text-gray-600 mb-8">
+                직원 없이도 완벽하게 운영되는 무인 매장 솔루션
+            </p>
+            <a href="index.html#contact" class="inline-block bg-green-600 text-white px-8 py-4 rounded-lg hover:bg-green-700 transition font-semibold">
+                도입 문의
+            </a>
+        </div>
+    </section>
+    
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">완전 무인화의 장점</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="text-center p-8">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-won-sign text-4xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">인건비 제로</h3>
+                    <p class="text-gray-600">직원 없이 24시간 무인 운영으로 연간 인건비를 90% 이상 절감하세요.</p>
+                </div>
+                <div class="text-center p-8">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-clock text-4xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">24시간 운영</h3>
+                    <p class="text-gray-600">언제나 열려있는 매장으로 고객의 편의성을 극대화하세요.</p>
+                </div>
+                <div class="text-center p-8">
+                    <div class="w-20 h-20 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-shield-alt text-4xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">안전한 결제</h3>
+                    <p class="text-gray-600">현금과 카드 모두 안전하게 처리하는 보안 시스템을 제공합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">주요 기능</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-money-bill-wave text-green-600 mr-3"></i>
+                        현금/카드 겸용 결제
+                    </h3>
+                    <p class="text-gray-600">지폐, 동전 자동 입출금 시스템과 모든 카드 결제 수단을 지원합니다.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-barcode text-green-600 mr-3"></i>
+                        상품 인식 시스템
+                    </h3>
+                    <p class="text-gray-600">바코드, QR코드, RFID 등 다양한 방식으로 상품을 자동 인식합니다.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-video text-green-600 mr-3"></i>
+                        원격 모니터링
+                    </h3>
+                    <p class="text-gray-600">실시간 CCTV와 시스템 모니터링으로 안전하게 매장을 관리합니다.</p>
+                </div>
+                <div class="bg-white rounded-xl shadow-lg p-8">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <i class="fas fa-chart-line text-green-600 mr-3"></i>
+                        자동 정산
+                    </h3>
+                    <p class="text-gray-600">매출과 현금을 자동으로 정산하고 리포트를 생성합니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="py-20 bg-gradient-to-br from-green-600 to-emerald-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">무인 매장 시작하기</h2>
+            <p class="text-xl mb-8 opacity-90">베스트페이먼츠 BestPayments와 함께 미래형 매장을 구축하세요</p>
+            <a href="index.html#contact" class="inline-block bg-white text-green-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition font-semibold">
+                무료 상담 신청
+            </a>
+        </div>
+    </section>
+    
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h4 class="text-2xl font-bold mb-4">
+                        <i class="fas fa-layer-group mr-2"></i>
+                        베스트페이먼츠 BestPayments, Ringo
+                    </h4>
+                    <p class="text-gray-400 mb-4">
+                        전자결제 솔루션의 선두주자<br>
+                   주식회사 링고</p>
+                    <!--<h4 class="text-2xl font-bold mb-4"><i class="fas fa-layer-group mr-2"></i>베스트페이먼츠 BestPayments</h4>
+                    <p class="text-gray-400">전자결제 솔루션의 선두주자</p>-->
+                </div>
+                <div>
+                    <h5 class="text-lg font-bold mb-4">제품</h5>
+                    <ul class="space-y-2">
+                        <li><a href="kiosk.html" class="text-gray-400 hover:text-white">키오스크</a></li>
+                        <li><a href="pos.html" class="text-gray-400 hover:text-white">POS 시스템</a></li>
+                        <li><a href="unmanned.html" class="text-gray-400 hover:text-white">무인결제</a></li>
+                        <li><a href="payment.html" class="text-gray-400 hover:text-white">전자결제 대행</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-lg font-bold mb-4">회사</h5>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#about" class="text-gray-400 hover:text-white">회사소개</a></li>
+                        <li><a href="index.html#contact" class="text-gray-400 hover:text-white">고객지원</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h5 class="text-lg font-bold mb-4">연락처</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i>1522-7267</li>
+                        <li><i class="fas fa-envelope mr-2"></i>hnb2022@naver.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>서울특별시 서초구 서초대로55길 17</li>
+						<li><i class="fas fa-map-marker-alt mr-2"></i>경기도 안산시 단원구 고잔동 757-1</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 베스트페이먼츠 BestPayments 주식회사. 링고 주식회사. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <button id="scroll-top" class="fixed bottom-8 right-8 bg-green-600 text-white w-12 h-12 rounded-full shadow-lg hover:bg-green-700 transition opacity-0 pointer-events-none">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+

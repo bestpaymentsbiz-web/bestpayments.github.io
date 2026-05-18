@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>베스트페이먼츠 BestPayments 주식회사 - 전자결제 솔루션의 선두주자</title>
+    <meta name="description" content="베스트페이먼츠 BestPayments는 키오스크, POS 시스템, 무인결제 솔루션을 제공하는 전자결제 대행서비스 선두기업입니다.">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#60a5fa',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans KR', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full bg-white shadow-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center">
+					<a href="index.html" class="flex items-center text-2xl font-bold text-primary">
+						<img src="img/ringo.png" alt="링고 이미지" class="h-12 w-auto mr-2">
+						<span class="leading-none">링고</span>
+					</a>
+				</div>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center space-x-8">
+					<a href="../index.html" class="text-gray-700 hover:text-primary transition">메인</a>
+                    <a href="#home" class="nav-link text-gray-700 hover:text-primary transition">홈</a>
+                    <a href="#solutions" class="nav-link text-gray-700 hover:text-primary transition">솔루션</a>
+                    <a href="#products" class="nav-link text-gray-700 hover:text-primary transition">제품</a>
+                    <a href="#about" class="nav-link text-gray-700 hover:text-primary transition">회사소개</a>
+                    <a href="../index.html#contact" class="nav-link text-gray-700 hover:text-primary transition">고객지원</a>
+                    <a href="../index.html#contact" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+                        도입문의
+                    </a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
+					<a href="../index.html" class="text-gray-700 hover:text-primary transition">메인</a>
+                    <a href="#home" class="text-gray-700 hover:text-primary transition">홈</a>
+                    <a href="#solutions" class="text-gray-700 hover:text-primary transition">솔루션</a>
+                    <a href="#products" class="text-gray-700 hover:text-primary transition">제품</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition">회사소개</a>
+                    <a href="#contact" class="text-gray-700 hover:text-primary transition">고객지원</a>
+                    <a href="#contact" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition text-center">
+                        도입문의
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-16 bg-gradient-to-br from-blue-50 to-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center justify-between">
+                <!-- Text Content -->
+                <div class="lg:w-1/2 mb-10 lg:mb-0">
+                    <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 mb-6 leading-tight">
+                        전자결제 솔루션의<br>
+                        <span class="text-primary">선두주자</span>
+                    </h1>
+                    <p class="text-xl text-gray-600 mb-8 leading-relaxed">
+                        링고는 혁신적인 키오스크, POS 시스템,<br>
+                        무인결제 솔루션으로 비즈니스의 성공을 지원합니다.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#products" class="bg-primary text-white px-8 py-4 rounded-lg hover:bg-blue-700 transition text-center font-semibold">
+                            제품 둘러보기
+                        </a>
+                        <a href="#contact" class="bg-white text-primary border-2 border-primary px-8 py-4 rounded-lg hover:bg-blue-50 transition text-center font-semibold">
+                            도입 문의하기
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Hero Image -->
+                <div class="lg:w-1/2 relative">
+                    <div class="bg-gradient-to-br from-primary to-secondary rounded-2xl p-8 shadow-2xl">
+                        <!-- <i class="fas fa-cash-register text-white text-9xl opacity-80"></i>-->
+						<img src="img/sub/kiosk_info.webp" 
+						 alt="kiosk_info" 
+						 class="w-full h-auto rounded-xl object-cover opacity-90">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Stats Section -->
+    <section class="py-12 bg-primary text-white">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="stat-item">
+                    <div class="text-5xl font-bold mb-2">8,500+</div>
+                    <div class="text-xl opacity-90">설치 매장 수</div>
+                </div>
+                <div class="stat-item">
+                    <div class="text-5xl font-bold mb-2">2조원+</div>
+                    <div class="text-xl opacity-90">연간 결제 처리금액</div>
+                </div>
+                <div class="stat-item">
+                    <div class="text-5xl font-bold mb-2">99.9%</div>
+                    <div class="text-xl opacity-90">시스템 안정성</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Solutions Section -->
+    <section id="solutions" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">통합 솔루션</h2>
+                <p class="text-xl text-gray-600">비즈니스 성공을 위한 완벽한 전자결제 시스템</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Solution 1 -->
+                <div class="solution-card bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-desktop text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">키오스크 솔루션</h3>
+                    <p class="text-gray-600 mb-6">24인치, 32인치 다양한 크기의 무인주문 키오스크로 완전 무인화 실현</p>
+                    <a href="kiosk.html" class="text-primary font-semibold hover:underline">자세히 보기 →</a>
+                </div>
+                
+                <!-- Solution 2 -->
+                <div class="solution-card bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-credit-card text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">POS 시스템</h3>
+                    <p class="text-gray-600 mb-6">실시간 매출관리, 재고관리가 가능한 통합 POS 솔루션</p>
+                    <a href="pos.html" class="text-primary font-semibold hover:underline">자세히 보기 →</a>
+                </div>
+                
+                <!-- Solution 3 -->
+                <div class="solution-card bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-mobile-alt text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">무인결제 시스템</h3>
+                    <p class="text-gray-600 mb-6">현금/카드 겸용 완전 무인결제로 인건비 제로화</p>
+                    <a href="unmanned.html" class="text-primary font-semibold hover:underline">자세히 보기 →</a>
+                </div>
+                
+                <!-- Solution 4 -->
+                <div class="solution-card bg-white rounded-xl shadow-lg p-8 hover:shadow-2xl transition transform hover:-translate-y-2">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-shield-alt text-3xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">전자결제 대행</h3>
+                    <p class="text-gray-600 mb-6">안전하고 빠른 전자결제 처리 및 정산 서비스</p>
+                    <a href="payment.html" class="text-primary font-semibold hover:underline">자세히 보기 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Products Section -->
+    <section id="products" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">주요 제품</h2>
+                <p class="text-xl text-gray-600">업종별 최적화된 키오스크 라인업</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                    <div class="h-64 bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
+                        <!--<i class="fas fa-laptop text-white text-8xl"></i>-->
+						<img src="img/sub/img_card_kiosk_01.png" 
+						 alt="설명" 
+						 class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-primary bg-blue-100 px-3 py-1 rounded-full">외식업</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mt-4 mb-2">24인치 카드전용</h3>
+                        <p class="text-gray-600 mb-4">소형 매장에 최적화된 데스크형, 스탠드형 키오스크</p>
+                        <ul class="text-gray-600 mb-6 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>24인치 터치스크린</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>카드 결제 전용</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>소형 매장 추천</li>
+                        </ul>
+                        <a href="kiosk.html#product-24c" class="block w-full bg-primary text-white text-center py-3 rounded-lg hover:bg-blue-700 transition">
+                            상세보기
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                    <div class="h-64 bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
+                        <!--<i class="fas fa-desktop text-white text-8xl"></i>-->
+						<img src="img/sub/kiosk_2.png" 
+						 alt="kiosk_2" 
+						 class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-primary bg-blue-100 px-3 py-1 rounded-full">외식업</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mt-4 mb-2">24인치 현금/카드겸용</h3>
+                        <p class="text-gray-600 mb-4">완전 무인화를 실현하는 스탠드형 키오스크</p>
+                        <ul class="text-gray-600 mb-6 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>현금/카드 겸용</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>완전 무인화</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>스탠드형</li>
+                        </ul>
+                        <a href="kiosk.html#product-24cm" class="block w-full bg-primary text-white text-center py-3 rounded-lg hover:bg-blue-700 transition">
+                            상세보기
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product 3 -->
+                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                    <div class="h-64 bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
+                        <!--<i class="fas fa-store text-white text-8xl"></i>-->
+						<img src="img/sub/kiosk_22.png" 
+						 alt="retail_01" 
+						 class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-green-600 bg-green-100 px-3 py-1 rounded-full">유통업</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mt-4 mb-2">22인치 유통형</h3>
+                        <p class="text-gray-600 mb-4">무인 편의점, 아이스크림 매장에 최적화</p>
+                        <ul class="text-gray-600 mb-6 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>현금/카드 겸용</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>탁상형 디자인</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>무인 매장 추천</li>
+                        </ul>
+                        <a href="kiosk.html#product-22retail" class="block w-full bg-primary text-white text-center py-3 rounded-lg hover:bg-blue-700 transition">
+                            상세보기
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product 4 -->
+                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                    <div class="h-64 bg-gradient-to-br from-indigo-400 to-indigo-600 flex items-center justify-center">
+                        <!-- <i class="fas fa-tv text-white text-8xl"></i> -->
+						<img src="img/sub/kiosk_2.png" 
+						 alt="kiosk_2" 
+						 class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-primary bg-blue-100 px-3 py-1 rounded-full">외식업</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mt-4 mb-2">32인치 카드전용</h3>
+                        <p class="text-gray-600 mb-4">중대형 매장을 위한 프리미엄 키오스크</p>
+                        <ul class="text-gray-600 mb-6 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>32인치 대형화면</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>카드 결제 전용</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>중대형 매장 추천</li>
+                        </ul>
+                        <a href="kiosk.html#product-32c" class="block w-full bg-primary text-white text-center py-3 rounded-lg hover:bg-blue-700 transition">
+                            상세보기
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product 5 -->
+                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                    <div class="h-64 bg-gradient-to-br from-red-400 to-red-600 flex items-center justify-center">
+                         <!-- <i class="fas fa-cash-register text-white text-8xl"></i> -->
+						<img src="img/sub/kiosk_2.png" 
+						 alt="kiosk_2" 
+						 class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-primary bg-blue-100 px-3 py-1 rounded-full">외식업</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mt-4 mb-2">32인치 현금/카드겸용</h3>
+                        <p class="text-gray-600 mb-4">완전 무인화 프리미엄 솔루션</p>
+                        <ul class="text-gray-600 mb-6 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>현금/카드 겸용</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>32인치 대형화면</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>완전 무인화</li>
+                        </ul>
+                        <a href="kiosk.html#product-32cm" class="block w-full bg-primary text-white text-center py-3 rounded-lg hover:bg-blue-700 transition">
+                            상세보기
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product 6 -->
+                <div class="product-card bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-2xl transition">
+                    <div class="h-64 bg-white flex items-center justify-center">
+                        <!-- <i class="fas fa-receipt text-white text-8xl"></i> -->
+						<img src="img/sub/pos_01.jpg" 
+						 alt="kiosk_2" 
+						 class="max-w-full max-h-full object-contain">
+                    </div>
+                    <div class="p-6">
+                        <span class="text-sm font-semibold text-orange-600 bg-orange-100 px-3 py-1 rounded-full">POS</span>
+                        <h3 class="text-2xl font-bold text-gray-900 mt-4 mb-2">통합 POS 시스템</h3>
+                        <p class="text-gray-600 mb-4">실시간 매출·재고 관리 솔루션</p>
+                        <ul class="text-gray-600 mb-6 space-y-2">
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>실시간 매출 분석</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>재고 관리</li>
+                            <li><i class="fas fa-check text-green-500 mr-2"></i>클라우드 기반</li>
+                        </ul>
+                        <a href="pos.html" class="block w-full bg-primary text-white text-center py-3 rounded-lg hover:bg-blue-700 transition">
+                            상세보기
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">시스템의 완성</h2>
+                <p class="text-xl text-gray-600">베스트페이먼츠 BestPayments가 제공하는 차별화된 가치</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Feature 1 -->
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-won-sign text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">합리적인 가격</h3>
+                    <p class="text-xl text-primary font-bold mb-2">하루 3,000원</p>
+                    <p class="text-gray-600">인건비 절감으로<br>영업이익 극대화</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-chart-line text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">실시간 운영관리</h3>
+                    <p class="text-gray-600">매장별 매출 관리<br>재고 관리<br>통합 대시보드</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-users text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">다양한 고객 솔루션</h3>
+                    <p class="text-gray-600">포인트 적립<br>4개국어 지원<br>맞춤형 UI/UX</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="text-center">
+                    <div class="w-24 h-24 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-gem text-4xl text-primary"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">세련된 하드웨어</h3>
+                    <p class="text-gray-600">전면 강화유리<br>고성능 시스템<br>프리미엄 디자인</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">회사 소개</h2>
+                    <p class="text-xl text-gray-600">신뢰와 혁신으로 함께하는 파트너</p>
+                </div>
+                
+                <div class="bg-white rounded-2xl shadow-xl p-10 mb-12">
+                    <h3 class="text-3xl font-bold text-gray-900 mb-6">주식회사 링고&nbsp;&nbsp;</h3>
+                    <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                        링고는 전자결제 대행서비스 분야의 선두주자로서, 
+                        혁신적인 키오스크 솔루션, POS 시스템, 무인결제 시스템을 제공합니다.
+                    </p>
+                    <p class="text-lg text-gray-700 leading-relaxed">
+                        8,500개 이상의 매장에 솔루션을 공급하며, 연간 2조원 이상의 
+                        결제를 처리하는 검증된 기술력과 안정성을 자랑합니다.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <!-- Vision -->
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-eye text-3xl text-primary"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-gray-900 mb-4">비전</h4>
+                        <p class="text-gray-700 leading-relaxed">
+                            전자결제 시장을 선도하는 종합 솔루션 기업으로 성장하여, 
+                            모든 비즈니스의 성공 파트너가 되겠습니다.
+                        </p>
+                    </div>
+                    
+                    <!-- Mission -->
+                    <div class="bg-white rounded-xl shadow-lg p-8">
+                        <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                            <i class="fas fa-flag text-3xl text-primary"></i>
+                        </div>
+                        <h4 class="text-2xl font-bold text-gray-900 mb-4">미션</h4>
+                        <p class="text-gray-700 leading-relaxed">
+                            혁신적인 기술과 안정적인 서비스로 고객의 비즈니스 
+                            효율성을 극대화하고 새로운 가치를 창출합니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="text-4xl font-bold text-gray-900 mb-4">고객 지원</h2>
+                    <p class="text-xl text-gray-600">언제든지 문의해 주세요</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+                    <!-- Contact Card 1 -->
+                    <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-lg p-8 text-center">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-phone text-2xl text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">전화 문의</h4>
+                        <p class="text-primary font-bold text-lg">1522-7267</p>
+                        <p class="text-gray-600 text-sm mt-2">평일 09:00 - 18:00</p>
+                    </div>
+                    
+                    <!-- Contact Card 2 -->
+                    <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-lg p-8 text-center">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-envelope text-2xl text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">이메일 문의</h4>
+                        <p class="text-primary font-bold text-lg">hnb2022@naver.com</p>
+                        <p class="text-gray-600 text-sm mt-2">24시간 접수 가능</p>
+                    </div>
+                    
+                    <!-- Contact Card 3 -->
+                    <div class="bg-gradient-to-br from-blue-50 to-white rounded-xl shadow-lg p-8 text-center">
+                        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+                            <i class="fas fa-map-marker-alt text-2xl text-white"></i>
+                        </div>
+                        <h4 class="text-xl font-bold text-gray-900 mb-2">방문 상담</h4>
+                        <p class="text-gray-700">서울특별시 서초구<br> 서초대로55길 17</p>
+                        <p class="text-gray-600 text-sm mt-2">사전 예약 필수</p>
+                    </div>
+                </div>
+                
+               
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <!-- Company Info -->
+                <div>
+                    <h4 class="text-2xl font-bold mb-4">
+                        <i class="fas fa-layer-group mr-2"></i>
+                        베스트페이먼츠 BestPayments, Ringo
+                    </h4>
+                    <p class="text-gray-400 mb-4">
+                        전자결제 솔루션의 선두주자<br>
+                   주식회사 링고</p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h5 class="text-lg font-bold mb-4">빠른 링크</h5>
+                    <ul class="space-y-2">
+						<a href="../index.html" class="text-gray-400 hover:text-primary transition">메인</a>
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">홈</a></li>
+                        <li><a href="#solutions" class="text-gray-400 hover:text-white transition">솔루션</a></li>
+                        <li><a href="#products" class="text-gray-400 hover:text-white transition">제품</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">회사소개</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Products -->
+                <div>
+                    <h5 class="text-lg font-bold mb-4">제품</h5>
+                    <ul class="space-y-2">
+                        <li><a href="kiosk.html" class="text-gray-400 hover:text-white transition">키오스크</a></li>
+                        <li><a href="pos.html" class="text-gray-400 hover:text-white transition">POS 시스템</a></li>
+                        <li><a href="unmanned.html" class="text-gray-400 hover:text-white transition">무인결제</a></li>
+                        <li><a href="payment.html" class="text-gray-400 hover:text-white transition">전자결제 대행</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h5 class="text-lg font-bold mb-4">연락처</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i>1522-7267</li>
+                        <li><i class="fas fa-envelope mr-2"></i>hnb2022@naver.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>서울특별시 서초구 서초대로55길 17</li>
+						<li><i class="fas fa-map-marker-alt mr-2"></i>경기도 안산시 단원구 고잔동 757-1</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 베스트페이먼츠 BestPayments 주식회사. 주식회사 링고. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scroll to Top Button -->
+    <button id="scroll-top" class="fixed bottom-8 right-8 bg-primary text-white w-12 h-12 rounded-full shadow-lg hover:bg-blue-700 transition opacity-0 pointer-events-none">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+

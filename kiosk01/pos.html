@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POS 시스템 - 베스트페이먼츠 BestPayments</title>
+    <meta name="description" content="실시간 매출관리와 재고관리가 가능한 베스트페이먼츠 BestPayments의 통합 POS 시스템을 만나보세요.">
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#1e40af',
+                        secondary: '#3b82f6',
+                        accent: '#60a5fa',
+                    },
+                    fontFamily: {
+                        sans: ['Noto Sans KR', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<body class="font-sans">
+    
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full bg-white shadow-md z-50 transition-all duration-300">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <a href="index.html" class="flex items-center text-2xl font-bold text-primary">
+                    <img src="img/ringo.png" alt="링고 이미지" class="h-12 w-auto mr-2">
+					<span class="leading-none">링고</span>
+                    </a>
+                </div>
+                
+                <div class="hidden lg:flex items-center space-x-8">
+                    <a href="index.html#home" class="text-gray-700 hover:text-primary transition">홈</a>
+                    <a href="index.html#solutions" class="text-gray-700 hover:text-primary transition">솔루션</a>
+                    <a href="index.html#products" class="text-gray-700 hover:text-primary transition">제품</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-primary transition">회사소개</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-primary transition">고객지원</a>
+                    <a href="index.html#contact" class="bg-primary text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition">
+                        도입문의
+                    </a>
+                </div>
+                
+                <button id="mobile-menu-btn" class="lg:hidden text-gray-700">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <div id="mobile-menu" class="hidden lg:hidden mt-4 pb-4">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html#home" class="text-gray-700 hover:text-primary transition">홈</a>
+                    <a href="index.html#solutions" class="text-gray-700 hover:text-primary transition">솔루션</a>
+                    <a href="index.html#products" class="text-gray-700 hover:text-primary transition">제품</a>
+                    <a href="index.html#about" class="text-gray-700 hover:text-primary transition">회사소개</a>
+                    <a href="index.html#contact" class="text-gray-700 hover:text-primary transition">고객지원</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Hero Section -->
+    <section class="pt-32 pb-16 bg-gradient-to-br from-orange-50 to-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center max-w-4xl mx-auto">
+                <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+                    통합 <span class="text-orange-600">POS 시스템</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8">
+                    실시간 매출 관리, 재고 관리, 고객 관리를 하나의 플랫폼에서
+                </p>
+                <a href="index.html#contact" class="inline-block bg-orange-600 text-white px-8 py-4 rounded-lg hover:bg-orange-700 transition font-semibold">
+                    무료 데모 신청
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">핵심 기능</h2>
+                <p class="text-xl text-gray-600">매장 운영의 모든 것을 하나로</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-orange-50 to-white rounded-xl shadow-lg p-8">
+                    <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-chart-line text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">실시간 매출 분석</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>실시간 매출 현황</li>
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>일/주/월별 통계</li>
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>메뉴별 판매 분석</li>
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>시간대별 매출 분석</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-orange-50 to-white rounded-xl shadow-lg p-8">
+                    <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-boxes text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">재고 관리</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>자동 재고 차감</li>
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>재고 부족 알림</li>
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>입출고 관리</li>
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>발주 관리</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-orange-50 to-white rounded-xl shadow-lg p-8">
+                    <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">고객 관리</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>고객 데이터베이스</li>
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>포인트 적립</li>
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>구매 이력 관리</li>
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>마케팅 도구</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-orange-50 to-white rounded-xl shadow-lg p-8">
+                    <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-utensils text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">주문 관리</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>테이블 관리</li>
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>주방 프린터 연동</li>
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>대기열 관리</li>
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>배달 주문 통합</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-orange-50 to-white rounded-xl shadow-lg p-8">
+                    <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-credit-card text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">결제 처리</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>다양한 결제 수단</li>
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>분할 결제</li>
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>취소/환불 처리</li>
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>자동 정산</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-orange-50 to-white rounded-xl shadow-lg p-8">
+                    <div class="w-16 h-16 bg-orange-600 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-cloud text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-4">클라우드 기반</h3>
+                    <ul class="text-gray-600 space-y-2">
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>언제 어디서나 접속</li>
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>자동 백업</li>
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>다중 매장 관리</li>
+                        <li><i class="fas fa-check text-orange-600 mr-2"></i>모바일 앱 지원</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Benefits Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">도입 효과</h2>
+                <p class="text-xl text-gray-600">검증된 성과로 입증된 가치</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-orange-600 mb-2">40%</div>
+                    <div class="text-xl text-gray-600">업무 시간 단축</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-orange-600 mb-2">30%</div>
+                    <div class="text-xl text-gray-600">재고 비용 절감</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-orange-600 mb-2">25%</div>
+                    <div class="text-xl text-gray-600">매출 증대</div>
+                </div>
+                <div class="text-center">
+                    <div class="text-5xl font-bold text-orange-600 mb-2">99.9%</div>
+                    <div class="text-xl text-gray-600">시스템 가동률</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Pricing Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">요금제</h2>
+                <p class="text-xl text-gray-600">매장 규모에 맞는 합리적인 가격</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                <div class="bg-white rounded-xl shadow-lg p-8 border-2 border-gray-200">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">스타터</h3>
+                    <p class="text-gray-600 mb-6">소규모 매장</p>
+                    <div class="text-4xl font-bold text-gray-900 mb-6">
+                        월 49,000원
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><i class="fas fa-check text-orange-600 mr-2"></i>1개 매장</li>
+                        <li class="flex items-center"><i class="fas fa-check text-orange-600 mr-2"></i>기본 매출 분석</li>
+                        <li class="flex items-center"><i class="fas fa-check text-orange-600 mr-2"></i>재고 관리</li>
+                        <li class="flex items-center"><i class="fas fa-check text-orange-600 mr-2"></i>이메일 지원</li>
+                    </ul>
+                    <a href="index.html#contact" class="block w-full bg-gray-200 text-gray-900 text-center py-3 rounded-lg hover:bg-gray-300 transition font-semibold">
+                        문의하기
+                    </a>
+                </div>
+                
+                <div class="bg-orange-600 rounded-xl shadow-2xl p-8 border-2 border-orange-600 transform scale-105">
+                    <div class="text-white text-sm font-bold mb-2">추천</div>
+                    <h3 class="text-2xl font-bold text-white mb-2">비즈니스</h3>
+                    <p class="text-orange-100 mb-6">중소규모 매장</p>
+                    <div class="text-4xl font-bold text-white mb-6">
+                        월 99,000원
+                    </div>
+                    <ul class="space-y-3 mb-8 text-white">
+                        <li class="flex items-center"><i class="fas fa-check mr-2"></i>3개 매장</li>
+                        <li class="flex items-center"><i class="fas fa-check mr-2"></i>고급 매출 분석</li>
+                        <li class="flex items-center"><i class="fas fa-check mr-2"></i>재고 + 고객 관리</li>
+                        <li class="flex items-center"><i class="fas fa-check mr-2"></i>24/7 전화 지원</li>
+                        <li class="flex items-center"><i class="fas fa-check mr-2"></i>모바일 앱</li>
+                    </ul>
+                    <a href="index.html#contact" class="block w-full bg-white text-orange-600 text-center py-3 rounded-lg hover:bg-gray-100 transition font-semibold">
+                        문의하기
+                    </a>
+                </div>
+                
+                <div class="bg-white rounded-xl shadow-lg p-8 border-2 border-gray-200">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">엔터프라이즈</h3>
+                    <p class="text-gray-600 mb-6">대규모/다중 매장</p>
+                    <div class="text-4xl font-bold text-gray-900 mb-6">
+                        맞춤 견적
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center"><i class="fas fa-check text-orange-600 mr-2"></i>무제한 매장</li>
+                        <li class="flex items-center"><i class="fas fa-check text-orange-600 mr-2"></i>맞춤형 분석</li>
+                        <li class="flex items-center"><i class="fas fa-check text-orange-600 mr-2"></i>전체 기능</li>
+                        <li class="flex items-center"><i class="fas fa-check text-orange-600 mr-2"></i>전담 매니저</li>
+                        <li class="flex items-center"><i class="fas fa-check text-orange-600 mr-2"></i>온사이트 교육</li>
+                    </ul>
+                    <a href="index.html#contact" class="block w-full bg-gray-200 text-gray-900 text-center py-3 rounded-lg hover:bg-gray-300 transition font-semibold">
+                        문의하기
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="py-20 bg-gradient-to-br from-orange-600 to-red-600 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-4xl font-bold mb-6">지금 바로 시작하세요</h2>
+            <p class="text-xl mb-8 opacity-90">30일 무료 체험으로 POS 시스템의 강력함을 경험하세요</p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="index.html#contact" class="bg-white text-orange-600 px-8 py-4 rounded-lg hover:bg-gray-100 transition font-semibold">
+                    무료 체험 시작
+                </a>
+                <a href="index.html" class="border-2 border-white text-white px-8 py-4 rounded-lg hover:bg-white hover:text-orange-600 transition font-semibold">
+                    홈으로 돌아가기
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                
+                    <div>
+                    <h4 class="text-2xl font-bold mb-4">
+                        <i class="fas fa-layer-group mr-2"></i>
+                        베스트페이먼츠 BestPayments, Ringo
+                    </h4>
+                    <p class="text-gray-400 mb-4">
+                        전자결제 솔루션의 선두주자<br>
+                   주식회사 링고</p>
+                </div>
+              
+                
+                <div>
+                    <h5 class="text-lg font-bold mb-4">제품</h5>
+                    <ul class="space-y-2">
+                        <li><a href="kiosk.html" class="text-gray-400 hover:text-white transition">키오스크</a></li>
+                        <li><a href="pos.html" class="text-gray-400 hover:text-white transition">POS 시스템</a></li>
+                        <li><a href="unmanned.html" class="text-gray-400 hover:text-white transition">무인결제</a></li>
+                        <li><a href="payment.html" class="text-gray-400 hover:text-white transition">전자결제 대행</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 class="text-lg font-bold mb-4">회사</h5>
+                    <ul class="space-y-2">
+                        <li><a href="index.html#about" class="text-gray-400 hover:text-white transition">회사소개</a></li>
+                        <li><a href="index.html#contact" class="text-gray-400 hover:text-white transition">고객지원</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h5 class="text-lg font-bold mb-4">연락처</h5>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><i class="fas fa-phone mr-2"></i>1522-7267</li>
+                        <li><i class="fas fa-envelope mr-2"></i>hnb2022@naver.com</li>
+                        <li><i class="fas fa-map-marker-alt mr-2"></i>서울특별시 서초구 서초대로55길 17</li>
+						<li><i class="fas fa-map-marker-alt mr-2"></i>경기도 안산시 단원구 고잔동 757-1</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-gray-400">
+                <p>&copy; 2026 베스트페이먼츠 BestPayments 주식회사. 링고 주식회사. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <button id="scroll-top" class="fixed bottom-8 right-8 bg-orange-600 text-white w-12 h-12 rounded-full shadow-lg hover:bg-orange-700 transition opacity-0 pointer-events-none">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+    
+    <script src="js/main.js"></script>
+</body>
+
+</html>
