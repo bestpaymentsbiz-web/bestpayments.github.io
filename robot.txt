@@ -1,22 +1,8 @@
+# 1. 모든 검색엔진 로봇에게 공통 적용 (구글, 네이버, 빙, 다음 등 전체)
 User-agent: *
 Allow: /
-
-# 이 파일이 있는 루트에 사이트맵을 개인 도메인 주소로 명시합니다.
-Sitemap: https://best-payments.com.com/sitemap.xml
-
-User-agent: *
-Disallow: /
 Allow: /index.html
 Allow: /assets/
 
-# Bingbot 허용
-User-agent: bingbot
-Allow: /
-Allow: /index.html
-Allow: /assets/
-
-# Naver Yeti 허용
-User-agent: Yeti
-Allow: /
-Allow: /index.html
-Allow: /assets/
+# 2. 사이트맵 위치 알려주기 
+Sitemap: https://best-payments.com/sitemap.xml
