@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>정기결제 - 베스트페이먼츠 BestPayments</title>
+    <meta name="description" content="자동화된 구독 결제 시스템">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+    <link rel="apple-touch-icon" href="assets/ci.png"/>
+    <link rel="stylesheet" href="css/navbar-fix.css">
+    <link rel="stylesheet" href="css/service-pages.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="베스트페이먼츠" style="height:52px;width:auto;display:block;"/>
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">홈</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle active">사업소개 <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pg-service.html">PG서비스</a></li>
+                        <li><a href="kiosk01/index.html">키오스크</a></li>
+                        <li><a href="subscription.html">정기결제</a></li>
+                        <li><a href="table-order.html">테이블오더</a></li>
+                        <li><a href="merchant-management.html">가맹점관리</a></li>
+                    </ul>
+                </li>
+                <li><a href="qna.html">Q&A</a></li>
+                <li><a href="public/login.html">로그인</a></li>
+                <li><a href="index.html#contact" class="btn-contact">문의하기</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Service Hero -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content" data-aos="fade-up">
+                <div class="service-hero-icon">
+                    <i class="fas fa-sync-alt"></i>
+                </div>
+                <h1>정기결제</h1>
+                <p class="service-hero-subtitle">자동화된 구독 결제 시스템</p>
+                <div class="service-tags">
+                    <span class="tag">월 구독</span>
+                    <span class="tag">자동 갱신</span>
+                    <span class="tag">멤버십</span>
+                    <span class="tag">정기 배송</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="service-overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-content" data-aos="fade-right">
+                    <h2>안정적인 수익 창출, <span class="highlight">정기결제</span></h2>
+                    <p>구독 경제 시대에 필수적인 정기결제 시스템을 제공합니다. 고객이 한 번 등록하면 자동으로 정해진 주기마다 결제가 이루어져 안정적인 수익을 확보할 수 있습니다.</p>
+                    <p>멤버십, 구독 서비스, 정기 배송 등 다양한 비즈니스 모델에 최적화된 정기결제 솔루션으로 고객 이탈을 방지하고 장기적인 수익을 보장합니다.</p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check-circle"></i> 자동 결제로 관리 부담 최소화</li>
+                        <li><i class="fas fa-check-circle"></i> 다양한 결제 주기 설정 가능</li>
+                        <li><i class="fas fa-check-circle"></i> 결제 실패 시 자동 재시도</li>
+                        <li><i class="fas fa-check-circle"></i> 고객 구독 관리 시스템 제공</li>
+                    </ul>
+                </div>
+                	<div class="overview-image" data-aos="fade-left">
+						<div class="overview-image" data-aos="fade-left">
+    					<img src="assets/img/rent.png" alt="빠른 원클릭 결제 이미지" class="overview-actual-image">
+					</div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Subscription Types -->
+    <section class="payment-methods">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">정기결제 <span class="highlight">유형</span></h2>
+                <p class="section-subtitle">비즈니스 특성에 맞는 다양한 정기결제 모델 지원</p>
+            </div>
+            <div class="methods-grid">
+                <div class="method-card" data-aos="zoom-in">
+                    <div class="method-icon">
+                        <i class="fas fa-calendar-day"></i>
+                    </div>
+                    <h3>월 구독</h3>
+                    <p>매월 정해진 날짜에<br>자동 결제</p>
+                </div>
+                <div class="method-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="method-icon">
+                        <i class="fas fa-calendar-week"></i>
+                    </div>
+                    <h3>주간 구독</h3>
+                    <p>매주 반복되는<br>자동 결제</p>
+                </div>
+                <div class="method-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="method-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>연간 구독</h3>
+                    <p>1년 단위<br>자동 갱신</p>
+                </div>
+                <div class="method-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="method-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>커스텀 주기</h3>
+                    <p>비즈니스에 맞춘<br>맞춤 설정</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="service-features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">정기결제 <span class="highlight">주요 기능</span></h2>
+            </div>
+            <div class="features-list">
+                <div class="feature-item" data-aos="fade-right">
+                    <div class="feature-number">01</div>
+                    <div class="feature-content">
+                        <h3>자동 결제 처리</h3>
+                        <p>고객이 설정한 주기에 맞춰 자동으로 결제가 진행됩니다. 별도의 결제 요청이나 확인 절차 없이 원활하게 구독이 유지되어 고객 이탈을 방지합니다.</p>
+                    </div>
+                </div>
+                <div class="feature-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="feature-number">02</div>
+                    <div class="feature-content">
+                        <h3>결제 실패 관리</h3>
+                        <p>카드 한도 초과나 유효기간 만료 등으로 결제가 실패할 경우, 자동으로 재시도하고 고객에게 알림을 발송합니다. 재시도 주기와 횟수를 유연하게 설정할 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="feature-item" data-aos="fade-right" data-aos-delay="200">
+                    <div class="feature-number">03</div>
+                    <div class="feature-content">
+                        <h3>구독 관리 대시보드</h3>
+                        <p>고객의 구독 현황, 결제 이력, 해지율 등을 실시간으로 확인할 수 있는 관리 시스템을 제공합니다. 데이터 분석을 통해 비즈니스 인사이트를 얻을 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="feature-item" data-aos="fade-right" data-aos-delay="300">
+                    <div class="feature-number">04</div>
+                    <div class="feature-content">
+                        <h3>유연한 요금제 관리</h3>
+                        <p>다양한 구독 플랜과 요금제를 쉽게 생성하고 관리할 수 있습니다. 프로모션 기간 무료 체험, 할인 쿠폰, 플랜 업그레이드 등 다양한 마케팅 전략을 구현할 수 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">정기결제가 가져오는 <span class="highlight">비즈니스 가치</span></h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="flip-left">
+                    <i class="fas fa-chart-pie"></i>
+                    <h3>안정적인 수익</h3>
+                    <p>예측 가능한 정기 수입으로 안정적인 매출 확보</p>
+                </div>
+                <div class="benefit-card" data-aos="flip-left" data-aos-delay="100">
+                    <i class="fas fa-user-check"></i>
+                    <h3>고객 유지율 향상</h3>
+                    <p>자동 결제로 고객 이탈률 감소, LTV 증가</p>
+                </div>
+                <div class="benefit-card" data-aos="flip-left" data-aos-delay="200">
+                    <i class="fas fa-tasks"></i>
+                    <h3>관리 효율성</h3>
+                    <p>수동 작업 최소화로 운영 비용 절감</p>
+                </div>
+                <div class="benefit-card" data-aos="flip-left" data-aos-delay="300">
+                    <i class="fas fa-rocket"></i>
+                    <h3>확장성</h3>
+                    <p>구독자 증가에도 안정적인 시스템 운영</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="use-cases">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">정기결제 <span class="highlight">활용 분야</span></h2>
+            </div>
+            <div class="cases-grid">
+                <div class="case-card" data-aos="fade-up">
+                    <div class="case-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>OTT/콘텐츠</h3>
+                    <p>스트리밍, 음악, 전자책 등 디지털 콘텐츠 구독</p>
+                </div>
+                <div class="case-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="case-icon">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+                    <h3>헬스/피트니스</h3>
+                    <p>온라인 PT, 운동 프로그램 월 회원권</p>
+                </div>
+                <div class="case-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="case-icon">
+                        <i class="fas fa-box"></i>
+                    </div>
+                    <h3>정기 배송</h3>
+                    <p>건강식품, 식재료, 생필품 정기 배송 서비스</p>
+                </div>
+                <div class="case-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="case-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>교육/강의</h3>
+                    <p>온라인 강의, 학습 플랫폼 구독 서비스</p>
+                </div>
+                <div class="case-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="case-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>월세</h3>
+                    <p>월간/연간 구독</p>
+                </div>
+                <div class="case-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="case-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>뷰티/패션</h3>
+                    <p>화장품, 의류 정기 구독 박스</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>정기결제로 <span class="highlight">안정적인 수익을 창출하세요</span></h2>
+                <p>구독 비즈니스 성공을 위한 완벽한 정기결제 솔루션을 제공합니다</p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="btn btn-primary">무료 상담 신청</a>
+                    <a href="qna.html" class="btn btn-secondary">자주 묻는 질문</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div style="background:#fff;display:inline-block;padding:10px 18px;border-radius:6px;margin-bottom:4px;">
+                            <img src="assets/logo.png" alt="베스트페이먼츠" style="height:44px;width:auto;display:block;"/>
+                        </div>
+                    </div>
+                    <p class="footer-desc">
+                        신뢰와 혁신으로 결제의 미래를 만드는<br>
+                        전자결제대행 전문기업
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>서비스</h4>
+                    <ul class="footer-links">
+                        <li><a href="pg-service.html">PG서비스</a></li>
+                        <li><a href="kiosk01/index.html">키오스크</a></li>
+                        <li><a href="subscription.html">정기결제</a></li>
+                        <li><a href="table-order.html">테이블오더</a></li>
+                        <li><a href="merchant-management.html">가맹점관리</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>고객지원</h4>
+                    <ul class="footer-links">
+                        <li><a href="qna.html">Q&A</a></li>
+                        <li><a href="index.html#contact">문의하기</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>회사정보</h4>
+                    <ul class="footer-info">
+                        <li><i class="fas fa-building"></i> 베스트페이먼츠 BestPayments</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 서울 본사 사업소</li>
+                        <li style="padding-left:22px;">서울특별시 서초구 서초대로55길 17</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 안산 지사 사업소</li>
+                        <li style="padding-left:22px;">경기도 안산시 단원구 고잔동757-1</li>
+                        <li><i class="fas fa-phone"></i> 1522-7267</li>
+                        <li><i class="fas fa-envelope"></i> hnb2022@naver.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 베스트페이먼츠 BestPayments. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

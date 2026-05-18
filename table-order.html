@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블오더결제 - 베스트페이먼츠 BestPayments</title>
+    <meta name="description" content="식음료 업계 특화 주문결제 시스템">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+    <link rel="apple-touch-icon" href="assets/ci.png"/>
+    <link rel="stylesheet" href="css/navbar-fix.css">
+    <link rel="stylesheet" href="css/service-pages.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="베스트페이먼츠" style="height:52px;width:auto;display:block;"/>
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">홈</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle active">사업소개 <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pg-service.html">PG서비스</a></li>
+                        <li><a href="kiosk01/index.html">키오스크</a></li>
+                        <li><a href="subscription.html">정기결제</a></li>
+                        <li><a href="table-order.html">테이블오더</a></li>
+                        <li><a href="merchant-management.html">가맹점관리</a></li>
+                    </ul>
+                </li>
+                <li><a href="qna.html">Q&A</a></li>
+                <li><a href="public/login.html">로그인</a></li>
+                <li><a href="index.html#contact" class="btn-contact">문의하기</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Service Hero -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content" data-aos="fade-up">
+                <div class="service-hero-icon">
+                    <i class="fas fa-utensils"></i>
+                </div>
+                <h1>테이블오더</h1>
+                <p class="service-hero-subtitle">식음료 업계 특화 주문결제 시스템</p>
+                <div class="service-tags">
+                    <span class="tag">테이블결제</span>
+                    <span class="tag">키오스크</span>
+                    <span class="tag">포스연동</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="service-overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-content" data-aos="fade-right">
+                    <h2>스마트한 매장 운영, <span class="highlight">테이블오더</span></h2>
+                    <p>카페, 레스토랑, 펍 등 식음료 업계에 특화된 테이블오더 결제 시스템입니다. 메뉴 확인부터 주문, 결제까지 한 번에 완료할 수 있습니다.</p>
+                    <p>직원 호출 없이 고객이 스스로 주문하고 결제할 수 있어 인건비를 절감하고, 테이블 회전율을 높여 매출 증대에 기여합니다.</p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check-circle"></i> POS 시스템 실시간 연동</li>
+                        <li><i class="fas fa-check-circle"></i> 테이블별 주문 관리</li>
+                        <li><i class="fas fa-check-circle"></i> 키오스크 통합 지원</li>
+                    </ul>
+                </div>
+                <div class="overview-image" data-aos="fade-left">
+						<div class="overview-image" data-aos="fade-left">
+    					<img src="assets/img/tableorder01.jpg" alt="빠른 원클릭 결제 이미지" class="overview-actual-image">
+						</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	
+    <!-- How It Works -->
+    <!--<section class="how-it-works">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">테이블오더 <span class="highlight">이용 방법</span></h2>
+                <p class="section-subtitle">간단한 4단계로 주문과 결제가 완료됩니다</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card" data-aos="fade-up">
+                    <div class="step-number">1</div>
+                    <div class="step-icon">
+                        <i class="fas fa-qrcode"></i>
+                    </div>
+                    <h3>QR 스캔</h3>
+                    <p>테이블에 부착된 QR코드를 스마트폰으로 스캔</p>
+                </div>
+                <div class="step-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-number">2</div>
+                    <div class="step-icon">
+                        <i class="fas fa-list"></i>
+                    </div>
+                    <h3>메뉴 선택</h3>
+                    <p>디지털 메뉴판에서 원하는 메뉴와 옵션 선택</p>
+                </div>
+                <div class="step-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="step-number">3</div>
+                    <div class="step-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>주문 확인</h3>
+                    <p>주문 내역과 금액을 확인하고 주문 전송</p>
+                </div>
+                <div class="step-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-number">4</div>
+                    <div class="step-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>즉시 결제</h3>
+                    <p>다양한 결제수단으로 바로 결제 완료</p>
+                </div>
+            </div>
+        </div>
+    </section>-->
+
+    <!-- Features -->
+	<section class="service-features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">테이블오더 <span class="highlight">핵심 기능</span></h2>
+            </div>
+            <div class="overview-grid" style="display: flex !important; justify-content: center !important; width: 100%;">
+				<div class="overview-image-container" data-aos="fade-up" style="width: auto;">
+					<img src="assets/img/table_oder.png" style="display: block; margin: 0 auto; max-width: 100%;">
+				</div>
+			</div>
+        </div>
+    </section>
+	
+    <section class="service-features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">테이블오더 <span class="highlight">핵심 기능</span></h2>
+            </div>
+            <div class="features-list">
+                <div class="feature-item" data-aos="fade-right">
+                    <div class="feature-number">01</div>
+                    <div class="feature-content">
+                        <h3>스마트 메뉴 관리</h3>
+                        <p>사진과 설명이 포함된 디지털 메뉴판으로 고객의 선택을 돕습니다. 실시간으로 메뉴 가격, 재고 상태를 업데이트할 수 있어 품절 상품에 대한 불만을 방지합니다.</p>
+                    </div>
+                </div>
+                <div class="feature-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="feature-number">02</div>
+                    <div class="feature-content">
+                        <h3>POS 시스템 연동</h3>
+                        <p>기존에 사용하던 POS 시스템과 실시간으로 연동되어 주문이 즉시 주방과 카운터로 전달됩니다. 별도의 주문 입력 작업 없이 업무 효율이 극대화됩니다.</p>
+                    </div>
+                </div>
+                <div class="feature-item" data-aos="fade-right" data-aos-delay="200">
+                    <div class="feature-number">03</div>
+                    <div class="feature-content">
+                        <h3>테이블 관리</h3>
+                        <p>각 테이블의 주문 현황, 결제 상태, 이용 시간을 실시간으로 확인할 수 있습니다. 효율적인 테이블 배치와 회전율 관리로 매출을 극대화할 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="feature-item" data-aos="fade-right" data-aos-delay="300">
+                    <div class="feature-number">04</div>
+                    <div class="feature-content">
+                        <h3>다국어 지원</h3>
+                        <p>한국어, 영어, 중국어, 일본어 등 다국어 메뉴를 지원하여 외국인 고객도 쉽게 주문할 수 있습니다. 관광지나 외국인 고객이 많은 매장에 최적화되어 있습니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">테이블오더가 가져오는 <span class="highlight">매장 혁신</span></h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="flip-left">
+                    <i class="fas fa-user-friends"></i>
+                    <h3>인건비 절감</h3>
+                    <p>주문 접수 인력 최소화로 30% 이상 인건비 절감</p>
+                </div>
+                <div class="benefit-card" data-aos="flip-left" data-aos-delay="100">
+                    <i class="fas fa-clock"></i>
+                    <h3>테이블 회전율 향상</h3>
+                    <p>빠른 주문과 결제로 대기 시간 단축, 회전율 증가</p>
+                </div>
+                <div class="benefit-card" data-aos="flip-left" data-aos-delay="200">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>매출 증대</h3>
+                    <p>추가 주문 유도와 효율적 운영으로 매출 20% 증가</p>
+                </div>
+                <div class="benefit-card" data-aos="flip-left" data-aos-delay="300">
+                    <i class="fas fa-smile"></i>
+                    <h3>고객 만족도 향상</h3>
+                    <p>비대면 주문으로 편의성 증대, 재방문율 상승</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Use Cases -->
+    <section class="use-cases">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">테이블오더 <span class="highlight">적용 업종</span></h2>
+            </div>
+            <div class="cases-grid">
+                <div class="case-card" data-aos="fade-up">
+                    <div class="case-icon">
+                        <i class="fas fa-coffee"></i>
+                    </div>
+                    <h3>카페</h3>
+                    <p>음료와 디저트 주문의 간편화</p>
+                </div>
+                <div class="case-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="case-icon">
+                        <i class="fas fa-pizza-slice"></i>
+                    </div>
+                    <h3>레스토랑</h3>
+                    <p>식사 메뉴 주문과 결제</p>
+                </div>
+                <div class="case-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="case-icon">
+                        <i class="fas fa-beer"></i>
+                    </div>
+                    <h3>펍/바</h3>
+                    <p>주류와 안주 추가 주문</p>
+                </div>
+                <div class="case-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="case-icon">
+                        <i class="fas fa-hamburger"></i>
+                    </div>
+                    <h3>패스트푸드</h3>
+                    <p>빠른 주문과 픽업 시스템</p>
+                </div>
+                <div class="case-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="case-icon">
+                        <i class="fas fa-ice-cream"></i>
+                    </div>
+                    <h3>디저트 카페</h3>
+                    <p>계절 메뉴와 신메뉴 홍보</p>
+                </div>
+                <div class="case-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="case-icon">
+                        <i class="fas fa-cocktail"></i>
+                    </div>
+                    <h3>호텔/리조트</h3>
+                    <p>룸서비스 주문 시스템</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>테이블오더로 <span class="highlight">매장을 스마트하게</span></h2>
+                <p>지금 바로 테이블오더 시스템을 도입하고 매출을 높이세요</p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="btn btn-primary">무료 상담 신청</a>
+                    <a href="qna.html" class="btn btn-secondary">자주 묻는 질문</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div style="background:#fff;display:inline-block;padding:10px 18px;border-radius:6px;margin-bottom:4px;">
+                            <img src="assets/logo.png" alt="베스트페이먼츠" style="height:44px;width:auto;display:block;"/>
+                        </div>
+                    </div>
+                    <p class="footer-desc">
+                        신뢰와 혁신으로 결제의 미래를 만드는<br>
+                        전자결제대행 전문기업
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>서비스</h4>
+                    <ul class="footer-links">
+                        <li><a href="pg-service.html">PG서비스</a></li>
+                        <li><a href="kiosk01/index.html">키오스크</a></li>
+                        <li><a href="subscription.html">정기결제</a></li>
+                        <li><a href="table-order.html">테이블오더</a></li>
+                        <li><a href="merchant-management.html">가맹점관리</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>고객지원</h4>
+                    <ul class="footer-links">
+                        <li><a href="qna.html">Q&A</a></li>
+                        <li><a href="index.html#contact">문의하기</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>회사정보</h4>
+                    <ul class="footer-info">
+                        <li><i class="fas fa-building"></i> 베스트페이먼츠 BestPayments</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 서울 본사 사업소</li>
+                        <li style="padding-left:22px;">서울특별시 서초구 서초대로55길 17</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 안산 지사 사업소</li>
+                        <li style="padding-left:22px;">경기도 안산시 단원구 고잔동757-1</li>
+                        <li><i class="fas fa-phone"></i> 1522-7267</li>
+                        <li><i class="fas fa-envelope"></i> hnb2022@naver.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 베스트페이먼츠 BestPayments. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>

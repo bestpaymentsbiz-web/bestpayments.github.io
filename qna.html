@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A - 베스트페이먼츠 BestPayments</title>
+    <meta name="description" content="자주 묻는 질문과 답변">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+    <link rel="apple-touch-icon" href="assets/ci.png"/>
+    <link rel="stylesheet" href="css/navbar-fix.css">
+    <link rel="stylesheet" href="css/qna.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="베스트페이먼츠" style="height:52px;width:auto;display:block;"/>
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">홈</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">사업소개 <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pg-service.html">PG서비스</a></li>
+                        <li><a href="kiosk01/index.html">키오스크</a></li>
+                        <li><a href="subscription.html">정기결제</a></li>
+                        <li><a href="table-order.html">테이블오더</a></li>
+                        <li><a href="merchant-management.html">가맹점관리</a></li>
+                    </ul>
+                </li>
+                <li><a href="qna.html" class="active">Q&A</a></li>
+                <li><a href="public/login.html">로그인</a></li>
+                <li><a href="index.html#contact" class="btn-contact">문의하기</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- QNA Hero -->
+    <section class="qna-hero">
+        <div class="container">
+            <div class="qna-hero-content" data-aos="fade-up">
+                <h1>자주 묻는 질문</h1>
+                <p>베스트페이먼츠 BestPayments 서비스에 대해 궁금하신 점을 확인하세요</p>
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="qnaSearch" placeholder="궁금한 내용을 검색해보세요">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- QNA Categories -->
+    <section class="qna-categories">
+        <div class="container">
+            <div class="categories-tabs">
+                <button class="category-tab active" data-category="all">
+                    <i class="fas fa-list"></i>
+                    전체
+                </button>
+                <button class="category-tab" data-category="service">
+                    <i class="fas fa-cog"></i>
+                    서비스 이용
+                </button>
+                <button class="category-tab" data-category="payment">
+                    <i class="fas fa-credit-card"></i>
+                    결제/정산
+                </button>
+                <button class="category-tab" data-category="tech">
+                    <i class="fas fa-code"></i>
+                    기술/연동
+                </button>
+                <button class="category-tab" data-category="account">
+                    <i class="fas fa-user"></i>
+                    계정/보안
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- QNA List -->
+    <section class="qna-list">
+        <div class="container">
+            <!-- Service Category -->
+            <div class="qna-item" data-category="service" data-aos="fade-up">
+                <div class="qna-question">
+                    <h3>서비스 도입에 얼마나 걸리나요?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="qna-answer">
+                    <p>일반적으로 상담 신청 후 1~3 영업일 내에 서비스를 시작하실 수 있습니다. 간단한 연동의 경우 더 빠르게 진행될 수 있으며, 복잡한 커스터마이징이 필요한 경우 1~2주 정도 소요될 수 있습니다.</p>
+                    <ul>
+                        <li>1: 상담 및 요구사항 분석</li>
+                        <li>2: 계약 및 시스템 설정</li>
+                        <li>3: 연동 테스트 및 오픈</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="qna-item" data-category="service" data-aos="fade-up">
+                <div class="qna-question">
+                    <h3>어떤 업종에 적합한가요?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="qna-answer">
+                    <p>베스트페이먼츠 BestPayments의 결제 솔루션은 모든 업종에 적용 가능합니다:</p>
+                    <ul>
+                        <li><strong>온라인 쇼핑몰:</strong> 의류, 전자제품, 식품 등 모든 이커머스</li>
+                        <li><strong>서비스업:</strong> 교육, 헬스, 뷰티, 컨설팅 등</li>
+                        <li><strong>식음료업:</strong> 카페, 레스토랑, 배달 서비스</li>
+                        <!--<li><strong>디지털 콘텐츠:</strong> OTT, 게임, 전자책, 음원</li>-->
+                        <li><strong>구독 서비스:</strong> 정기 배송, 정기 결제, 멤버십</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="qna-item" data-category="service" data-aos="fade-up">
+                <div class="qna-question">
+                    <h3>여러 매장을 운영 중인데 통합 관리가 가능한가요?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="qna-answer">
+                    <p>네, 가능합니다. 가맹점관리 시스템에서 여러 매장의 결제 내역과 매출을 통합하여 관리할 수 있습니다. 각 매장별 실적 비교, 통합 정산, 전체 매출 현황을 한눈에 확인하실 수 있습니다.</p>
+                </div>
+            </div>
+
+            <!-- Payment Category -->
+            <div class="qna-item" data-category="payment" data-aos="fade-up">
+                <div class="qna-question">
+                    <h3>수수료율은 어떻게 되나요?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="qna-answer">
+                    <p>베스트페이먼츠 BestPayments는 업계 최저 수준의 수수료를 제공합니다. 정확한 수수료율은 업종, 월 거래액, 결제 수단에 따라 달라지므로 상담을 통해 최적의 조건을 제안해드립니다.</p>
+                    
+                    <p><em>※ 거래량에 따라 우대 수수료가 적용될 수 있습니다.</em></p>
+                </div>
+            </div>
+
+            <div class="qna-item" data-category="payment" data-aos="fade-up">
+                <div class="qna-question">
+                    <h3>정산은 언제 이루어지나요?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="qna-answer">
+                    <p>정산 주기는 결제 수단과 계약 조건에 따라 다릅니다:</p>
+                    <ul>
+                        <li><strong>신용카드:</strong> D+1 ~ D+3 (영업일 기준)</li>
+                        <li><strong>신용카드:</strong> 즉시 입금 또는 모아 출금 지원 (영업일 기준)</li>
+                    </ul>
+                    <p>월 거래액이 일정 금액 이상인 경우 정산 주기를 단축할 수 있습니다.</p>
+                </div>
+            </div>
+
+            <div class="qna-item" data-category="payment" data-aos="fade-up">
+                <div class="qna-question">
+                    <h3>환불 처리는 어떻게 하나요?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="qna-answer">
+                    <p>관리자 페이지에서 간편하게 환불 처리가 가능합니다:</p>
+                    <ol>
+                        <li>관리자 페이지 로그인</li>
+                        <li>거래 내역에서 해당 결제 건 선택</li>
+                        <li>환불 금액 입력 (전체 또는 부분 환불 가능)</li>
+                        <li>환불 사유 입력 후 승인</li>
+                    </ol>
+                    <p>환불은 즉시 처리되며, 고객의 카드사 또는 은행에 따라 실제 반영까지 3~5 영업일이 소요될 수 있습니다.</p>
+                </div>
+            </div>
+
+            <!-- Tech Category -->
+            <!--<div class="qna-item" data-category="tech" data-aos="fade-up">
+                <div class="qna-question">
+                    <h3>결제 연동은 어렵나요? 개발 지식이 필요한가요?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="qna-answer">
+                    <p>결제 연동은 생각보다 간단합니다:</p>
+                    <ul>
+                        <li><strong>쇼핑몰 솔루션 사용 시:</strong> 카페24, 고도몰, 메이크샵 등 주요 쇼핑몰 솔루션용 플러그인을 제공하여 클릭 몇 번으로 연동 가능</li>
+                        <li><strong>자체 개발 사이트:</strong> 상세한 API 문서와 샘플 코드를 제공하며, 기술 지원팀이 연동 과정을 도와드립니다</li>
+                        <li><strong>개발 지식이 없는 경우:</strong> 연동 대행 서비스를 이용하실 수 있습니다</li>
+                    </ul>
+                </div>
+            </div>-->
+
+            <div class="qna-item" data-category="tech" data-aos="fade-up">
+                <div class="qna-question">
+                    <h3>테스트 환경을 제공하나요?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="qna-answer">
+                    <p>네, 실제 서비스 오픈 전에 충분히 테스트할 수 있는 샌드박스(테스트) 환경을 제공합니다. 테스트 환경에서는 실제 결제 없이 모든 기능을 확인하고 검증할 수 있습니다.</p>
+                </div>
+            </div>
+
+            <div class="qna-item" data-category="tech" data-aos="fade-up">
+                <div class="qna-question">
+                    <h3>모바일 앱에도 연동할 수 있나요?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="qna-answer">
+                    <p>네, iOS와 Android 앱 모두 지원합니다. 네이티브 앱용 SDK를 제공하며, React Native, Flutter 등 하이브리드 앱 프레임워크도 지원합니다. 모바일 환경에 최적화된 결제창과 간편한 연동 방법을 제공합니다.</p>
+                </div>
+            </div>
+
+            <!-- Account Category -->
+            <div class="qna-item" data-category="account" data-aos="fade-up">
+                <div class="qna-question">
+                    <h3>결제 정보는 안전하게 보호되나요?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="qna-answer">
+                    <p>고객의 결제 정보 보안은 최우선 사항입니다:</p>
+                    <ul>
+                        <li><strong>PCI-DSS 인증:</strong> 국제 카드 보안 표준 인증 획득</li>
+                        <li><strong>SSL 암호화:</strong> 모든 결제 데이터는 SSL/TLS로 암호화하여 전송</li>
+                        <li><strong>토큰화:</strong> 민감한 카드 정보는 토큰으로 변환하여 저장</li>
+                        <li><strong>24/7 모니터링:</strong> 실시간 보안 위협 탐지 및 대응</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!--<div class="qna-item" data-category="account" data-aos="fade-up">
+                <div class="qna-question">
+                    <h3>관리자 권한은 어떻게 설정하나요?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="qna-answer">
+                    <p>관리자 페이지에서 팀원별로 세밀한 권한 설정이 가능합니다:</p>
+                    <ul>
+                        <li><strong>슈퍼 관리자:</strong> 모든 기능 접근 가능</li>
+                        <li><strong>매니저:</strong> 거래 조회, 환불 처리, 정산 확인</li>
+                        <li><strong>운영자:</strong> 거래 조회 및 고객 응대</li>
+                        <li><strong>회계 담당자:</strong> 정산 및 세금계산서 관리</li>
+                    </ul>
+                    <p>필요에 따라 커스텀 권한 그룹을 생성할 수도 있습니다.</p>
+                </div>
+            </div>-->
+
+            <div class="qna-item" data-category="service" data-aos="fade-up">
+                <div class="qna-question">
+                    <h3>계약 기간이나 해지 조건은 어떻게 되나요?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="qna-answer">
+                    <p>베스트페이먼츠 BestPayments는 유연한 계약 조건을 제공합니다:</p>
+                    <ul>
+                        <li><strong>최소 계약 기간:</strong> 없음 </li>
+                        <li><strong>해지 절차:</strong> 30일 전 서면 통보로 언제든지 해지 가능</li>
+                        <li><strong>위약금:</strong> 없음 (단, 무선 단말기의 경우 1년 이내 해지 시 통신료 위약금이 발생할 수 있습니다.)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="qna-item" data-category="service" data-aos="fade-up">
+                <div class="qna-question">
+                    <h3>고객 지원은 어떻게 받을 수 있나요?</h3>
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+                <div class="qna-answer">
+                    <p>다양한 방법으로 고객 지원을 받으실 수 있습니다:</p>
+                    <ul>
+                        <li><strong>전화 상담:</strong> 1522-7267 (평일 09:00~18:00)</li>
+                        <li><strong>이메일:</strong> hnb2022@naver.com (24시간 접수, 영업일 기준 24시간 내 답변)</li>
+                        <li><strong>톡 채널:</strong> 실시간 채팅 상담</li>
+                        <li><strong>관리자 페이지:</strong> 1:1 문의 게시판</li>
+                    </ul>
+                    <p>긴급한 기술 문제의 경우 24/7 긴급 지원 핫라인을 이용하실 수 있습니다.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Still Have Questions -->
+    <section class="qna-contact">
+        <div class="container">
+            <div class="qna-contact-content" data-aos="zoom-in">
+                <i class="fas fa-question-circle"></i>
+                <h2>찾으시는 답변이 없으신가요?</h2>
+                <p>전문 상담팀이 친절하게 답변해드립니다</p>
+                <div class="contact-buttons">
+                    <a href="index.html#contact" class="btn btn-primary">
+                        <i class="fas fa-envelope"></i>
+                        문의하기
+                    </a>
+                    <a href="tel:1522-7267" class="btn btn-secondary">
+                        <i class="fas fa-phone"></i>
+                        1522-7267
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div style="background:#fff;display:inline-block;padding:10px 18px;border-radius:6px;margin-bottom:4px;">
+                            <img src="assets/logo.png" alt="베스트페이먼츠" style="height:44px;width:auto;display:block;"/>
+                        </div>
+                    </div>
+                    <p class="footer-desc">
+                        신뢰와 혁신으로 결제의 미래를 만드는<br>
+                        전자결제대행 전문기업
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>서비스</h4>
+                    <ul class="footer-links">
+                        <li><a href="pg-service.html">PG서비스</a></li>
+                        <li><a href="kiosk01/index.html">키오스크</a></li>
+                        <li><a href="subscription.html">정기결제</a></li>
+                        <li><a href="table-order.html">테이블오더</a></li>
+                        <li><a href="merchant-management.html">가맹점관리</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>고객지원</h4>
+                    <ul class="footer-links">
+                        <li><a href="qna.html">Q&A</a></li>
+                        <li><a href="index.html#contact">문의하기</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>회사정보</h4>
+                    <ul class="footer-info">
+                        <li><i class="fas fa-building"></i> 베스트페이먼츠 BestPayments</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 서울 본사 사업소</li>
+                        <li style="padding-left:22px;">서울특별시 서초구 서초대로55길 17</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 안산 지사 사업소</li>
+                        <li style="padding-left:22px;">경기도 안산시 단원구 고잔동757-1</li>
+                        <li><i class="fas fa-phone"></i> 1522-7267</li>
+                        <li><i class="fas fa-envelope"></i> hnb2022@naver.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 베스트페이먼츠 BestPayments. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+    <script src="js/qna.js"></script>
+</body>
+</html>

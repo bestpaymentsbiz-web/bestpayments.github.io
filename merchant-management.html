@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가맹점관리 - 베스트페이먼츠 BestPayments</title>
+    <meta name="description" content="통합 관리 시스템으로 효율적인 운영">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+    <link rel="apple-touch-icon" href="assets/ci.png"/>
+    <link rel="stylesheet" href="css/navbar-fix.css">
+    <link rel="stylesheet" href="css/service-pages.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+        <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="베스트페이먼츠" style="height:52px;width:auto;display:block;"/>
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">홈</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle active">사업소개 <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="pg-service.html">PG서비스</a></li>
+                        <li><a href="kiosk01/index.html">키오스크</a></li>
+                        <li><a href="subscription.html">정기결제</a></li>
+                        <li><a href="table-order.html">테이블오더</a></li>
+                        <li><a href="merchant-management.html">가맹점관리</a></li>
+                    </ul>
+                </li>
+                <li><a href="qna.html">Q&A</a></li>
+                <li><a href="public/login.html">로그인</a></li>
+                <li><a href="index.html#contact" class="btn-contact">문의하기</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Service Hero -->
+    <section class="service-hero">
+        <div class="container">
+            <div class="service-hero-content" data-aos="fade-up">
+                <div class="service-hero-icon">
+                    <i class="fas fa-chart-line"></i>
+                </div>
+                <h1>가맹점관리</h1>
+                <p class="service-hero-subtitle">통합 관리 시스템으로 효율적인 운영</p>
+                <div class="service-tags">
+                    <span class="tag">실시간 대시보드</span>
+                    <span class="tag">매출 분석</span>
+                    <span class="tag">정산 관리</span>
+                    <span class="tag">맞춤 리포트</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Overview -->
+    <section class="service-overview">
+        <div class="container">
+            <div class="overview-grid">
+                <div class="overview-content" data-aos="fade-right">
+                    <h2>한눈에 보는 비즈니스,&nbsp;</h2>
+                    <h2><span class="highlight">가맹점관리</span></h2>
+<p>결제 내역, 매출 통계, 정산 관리까지 모든 것을 한 곳에서 확인하고 관리할 수 있는 통합 관리 시스템을 제공합니다.</p>
+                    <p>비즈니스 특성에 맞춰 커스터마이징된 대시보드와 리포트로 데이터 기반의 의사결정을 지원하며, 모바일에서도 언제 어디서나 매장 현황을 확인할 수 있습니다.</p>
+                    <ul class="check-list">
+                        <li><i class="fas fa-check-circle"></i> 실시간 매출 현황 모니터링</li>
+                        <li><i class="fas fa-check-circle"></i> 자동 정산 </li>
+                        <li><i class="fas fa-check-circle"></i> 다차원 매출 분석 리포트</li>
+                        <li><i class="fas fa-check-circle"></i> 모바일 관리자 앱 제공</li>
+                    </ul>
+                </div>
+                <div class="overview-image" data-aos="fade-left">
+                <div class="overview-image" data-aos="fade-left">
+						<div class="overview-image" data-aos="fade-left">
+    					<img src="assets/img/data.jpg" alt="빠른 원클릭 결제 이미지" class="overview-actual-image">
+					</div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dashboard Features -->
+    <section class="dashboard-features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">관리 시스템 <span class="highlight">주요 화면</span></h2>
+                <p class="section-subtitle">비즈니스 운영에 필요한 모든 정보를 한눈에</p>
+            </div>
+            <div class="dashboard-grid">
+                <div class="dashboard-card" data-aos="fade-up">
+                    <div class="dashboard-icon">
+                        <i class="fas fa-tachometer-alt"></i>
+                    </div>
+                    <h3>실시간 대시보드</h3>
+                    <p>오늘의 매출, 결제 건수, 취소/환불 현황을 실시간으로 확인</p>
+                    <ul class="feature-list">
+                        <li>일/주/월별 매출 그래프</li>
+                        <li>결제수단별 통계</li>
+                        <li>시간대별 매출 분석</li>
+                    </ul>
+                </div>
+                <div class="dashboard-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="dashboard-icon">
+                        <i class="fas fa-list-alt"></i>
+                    </div>
+                    <h3>거래 내역 조회</h3>
+                    <p>모든 결제 거래를 상세하게 조회하고 검색</p>
+                    <ul class="feature-list">
+                        <li>다양한 필터 및 검색 기능</li>
+                        <li>거래 상태별 분류</li>
+                        <li>엑셀 다운로드 지원</li>
+                    </ul>
+                </div>
+                <div class="dashboard-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="dashboard-icon">
+                        <i class="fas fa-calculator"></i>
+                    </div>
+                    <h3>정산 관리</h3>
+                    <p>자동 정산 처리와 정산 내역 확인</p>
+                    <ul class="feature-list">
+                        <li>정산 예정 금액 확인</li>
+                        <li>정산 내역서 발행</li>
+                        
+                    </ul>
+                </div>
+                <div class="dashboard-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="dashboard-icon">
+                        <i class="fas fa-chart-pie"></i>
+                    </div>
+                    <h3>매출 분석 리포트</h3>
+                    <p>다차원 분석으로 비즈니스 인사이트 도출</p>
+                    <ul class="feature-list">
+                        <li>기간별 비교 분석</li>
+                        <li>상품/카테고리별 매출</li>
+                        <li>고객 분석 리포트</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section class="service-features">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">가맹점관리 <span class="highlight">핵심 기능</span></h2>
+            </div>
+            <div class="features-list">
+                <div class="feature-item" data-aos="fade-right">
+                    <div class="feature-number">01</div>
+                    <div class="feature-content">
+                        <h3>커스터마이징 대시보드</h3>
+                        <p>각 비즈니스의 특성과 요구사항에 맞춰 대시보드를 맞춤 설정할 수 있습니다. 필요한 지표와 차트만 선택하여 나만의 관리 화면을 구성하고, 중요한 정보를 우선적으로 확인할 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="feature-item" data-aos="fade-right" data-aos-delay="100">
+                    <div class="feature-number">02</div>
+                    <div class="feature-content">
+                        <h3>다점포 통합 관리</h3>
+                        <p>여러 매장을 운영하는 경우, 모든 점포의 매출과 거래 내역을 하나의 관리자 페이지에서 통합 관리할 수 있습니다. 점포별 비교 분석과 전체 현황을 한눈에 파악할 수 있습니다.</p>
+                    </div>
+                </div>
+                <div class="feature-item" data-aos="fade-right" data-aos-delay="200">
+                    <div class="feature-number">03</div>
+                    <div class="feature-content">
+                        <h3>권한 관리</h3>
+                        <p>직원별로 접근 권한을 세밀하게 설정할 수 있습니다. 매니저, 직원, 회계 담당자 등 역할에 따라 필요한 메뉴와 기능만 제공하여 정보 보안을 강화합니다.</p>
+                    </div>
+                </div>
+                <div class="feature-item" data-aos="fade-right" data-aos-delay="300">
+                    <div class="feature-number">04</div>
+                    <div class="feature-content">
+                        <h3>알림 및 리포트 자동 발송</h3>
+                        <p>설정한 조건에 따라 중요한 이벤트 발생 시 이메일이나 문자로 즉시 알림을 받을 수 있습니다. 일일/주간/월간 리포트를 자동으로 생성하여 발송하는 기능도 제공합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Management Tools -->
+    <section class="management-tools">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">운영 효율을 높이는 <span class="highlight">관리 도구</span></h2>
+            </div>
+            <div class="tools-grid">
+                <div class="tool-card" data-aos="zoom-in">
+                    <div class="tool-icon">
+                        <i class="fas fa-file-export"></i>
+                    </div>
+                    <h3>데이터 내보내기</h3>
+                    <p>거래 내역과 통계 데이터를 엑셀, CSV, PDF 등 다양한 형식으로 내보내기</p>
+                </div>
+                <div class="tool-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="tool-icon">
+                        <i class="fas fa-bell"></i>
+                    </div>
+                    <h3>실시간 알림</h3>
+                    <p>고액 결제, 결제 실패, 환불 요청 등 중요 이벤트 발생 시 즉시 알림</p>
+                </div>
+                <div class="tool-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="tool-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>결제 설정</h3>
+                    <p>결제 수단별 활성화/비활성화, 최소/최대 금액 설정 등 세부 설정</p>
+                </div>
+                <div class="tool-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="tool-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>모바일 앱</h3>
+                    <p>iOS/Android 앱으로 언제 어디서나 매장 현황 확인 및 관리</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits -->
+    <section class="benefits">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">가맹점관리가 제공하는 <span class="highlight">비즈니스 가치</span></h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card" data-aos="flip-left">
+                    <i class="fas fa-clock"></i>
+                    <h3>업무 시간 절감</h3>
+                    <p>자동화된 관리로 수작업 시간 70% 절감</p>
+                </div>
+                <div class="benefit-card" data-aos="flip-left" data-aos-delay="100">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>데이터 기반 의사결정</h3>
+                    <p>실시간 분석으로 빠른 비즈니스 판단</p>
+                </div>
+                <div class="benefit-card" data-aos="flip-left" data-aos-delay="200">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>투명한 정산</h3>
+                    <p>명확한 정산 내역으로 신뢰도 향상</p>
+                </div>
+                <div class="benefit-card" data-aos="flip-left" data-aos-delay="300">
+                    <i class="fas fa-expand"></i>
+                    <h3>사업 확장 용이</h3>
+                    <p>다점포 통합 관리로 매장 확장 지원</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots -->
+    <section class="screenshots">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">관리 시스템 <span class="highlight">화면 미리보기</span></h2>
+            </div>
+            <div class="screenshots-grid">
+                <div class="screenshot-card" data-aos="fade-up">
+                    <div class="screenshot-placeholder">
+                        <i class="fas fa-desktop"></i>
+                        <p>실시간 대시보드</p>
+                    </div>
+                </div>
+                <div class="screenshot-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="screenshot-placeholder">
+                        <i class="fas fa-chart-bar"></i>
+                        <p>매출 분석 리포트</p>
+                    </div>
+                </div>
+                <div class="screenshot-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="screenshot-placeholder">
+                        <i class="fas fa-list"></i>
+                        <p>거래 내역 조회</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content" data-aos="zoom-in">
+                <h2>스마트한 관리 시스템으로 <span class="highlight">비즈니스를 성장시키세요</span></h2>
+                <p>커스터마이징된 가맹점 관리 솔루션으로 업무 효율을 극대화하세요</p>
+                <div class="cta-buttons">
+                    <a href="index.html#contact" class="btn btn-primary">무료 상담 신청</a>
+                    <a href="qna.html" class="btn btn-secondary">자주 묻는 질문</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+        <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div style="background:#fff;display:inline-block;padding:10px 18px;border-radius:6px;margin-bottom:4px;">
+                            <img src="assets/logo.png" alt="베스트페이먼츠" style="height:44px;width:auto;display:block;"/>
+                        </div>
+                    </div>
+                    <p class="footer-desc">
+                        신뢰와 혁신으로 결제의 미래를 만드는<br>
+                        전자결제대행 전문기업
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>서비스</h4>
+                    <ul class="footer-links">
+                        <li><a href="pg-service.html">PG서비스</a></li>
+                        <li><a href="kiosk01/index.html">키오스크</a></li>
+                        <li><a href="subscription.html">정기결제</a></li>
+                        <li><a href="table-order.html">테이블오더</a></li>
+                        <li><a href="merchant-management.html">가맹점관리</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>고객지원</h4>
+                    <ul class="footer-links">
+                        <li><a href="qna.html">Q&A</a></li>
+                        <li><a href="index.html#contact">문의하기</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>회사정보</h4>
+                    <ul class="footer-info">
+                        <li><i class="fas fa-building"></i> 베스트페이먼츠 BestPayments</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 서울 본사 사업소</li>
+                        <li style="padding-left:22px;">서울특별시 서초구 서초대로55길 17</li>
+                        <li><i class="fas fa-map-marker-alt"></i> 안산 지사 사업소</li>
+                        <li style="padding-left:22px;">경기도 안산시 단원구 고잔동757-1</li>
+                        <li><i class="fas fa-phone"></i> 1522-7267</li>
+                        <li><i class="fas fa-envelope"></i> hnb2022@naver.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 베스트페이먼츠 BestPayments. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

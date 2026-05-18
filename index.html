@@ -1,7 +1,414 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>베스트페이먼츠 BestPayments - 전자결제대행 전문기업</title>
+    
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+    <link rel="apple-touch-icon" href="assets/ci.png"/>
+    <meta name="description" content="다년간의 노하우, 업계 최저 수수료, 커스터마이징 관리사이트 제공">
+    <meta name="keywords" content="베스트페이먼츠 BestPayments, 전자결제대행, PG사, 온라인 결제, 간편 결제">
+    <meta name="naver-site-verification" content="da188f9b6233be61f636d87238ef9f60600cac86" />
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar-fix.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <script>
+    (function() {
+      var w = window;
+      if (w.ChannelIO) {
+        return (window.console.error || window.console.log)('ChannelIO script included twice.');
+      }
+      var ch = function() {
+        ch.c(arguments);
+      };
+      ch.q = [];
+      ch.c = function(args) {
+        ch.q.push(args);
+      };
+      w.ChannelIO = ch;
+      function l() {
+        if (w.ChannelIOInitialized) {
+          return;
+        }
+        w.ChannelIOInitialized = true;
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://cdn.channel.io/plugin/ch-plugin-web.js';
+        var x = document.getElementsByTagName('script')[0];
+        x.parentNode.insertBefore(s, x);
+      }
+      if (document.readyState === 'complete') {
+        l();
+      } else {
+        window.addEventListener('DOMContentLoaded', l, false);
+        window.addEventListener('load', l, false);
+      }
+    })();
+    ChannelIO('boot', {
+      "pluginKey": "f8e87e22-f3ac-40ee-af21-8c13b0c9d2fb"
+    });
+    </script>
+</head>
 <body>
-  <h1>홈페이지에 오신 것을 환영합니다!</h1>
-  <p>페이지를 설정했습니다.</p>
+	<!--<div id="floating-popup-container" class="popup-wrapper">
+		<div class="popup-card" id="popup-1">
+			<div class="popup-content">
+				<!-- <a href="연결할_링크_주소"> -->
+					<!--<img src="assets/New Year's greetings.jpg" alt="새해인사">
+				</a>
+			</div>
+			<div class="popup-footer">
+				<label><input type="checkbox" class="hide-today"> 오늘 하루 보지 않기</label>
+				<button class="close-btn" onclick="closePopup('popup-1')">×</button>
+			</div>
+		</div>
+		<div class="popup-card" id="popup-2">
+			<div class="popup-content">
+				<img src="팝업_이미지_경로_2.jpg" alt="공지사항">
+			</div>
+			<div class="popup-footer">
+				<label><input type="checkbox" class="hide-today"> 오늘 하루 보지 않기</label>
+				<button class="close-btn" onclick="closePopup('popup-2')">×</button>
+			</div>
+		</div>
+	</div>-->
+	<link rel="stylesheet" href="css/popup.css">
+	<script src="js/popup.js"></script>
+	<nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <img src="assets/logo.png" alt="베스트페이먼츠" style="height:52px;width:auto;display:block;"/>
+            </a>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+				<li><a href="index.html" class="active">홈</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle">사업소개 <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                       <li><a href="pg-service.html">PG서비스</a></li>
+						<li><a href="kiosk01/index.html">키오스크</a></li>
+                        <li><a href="subscription.html">정기결제</a></li>
+                        <li><a href="table-order.html">테이블오더</a></li>
+						<!--<li><a href="jewelry.html">주얼리전용결제</a></li> -->
+                        <li><a href="merchant-management.html">가맹점관리</a></li>
+                    </ul>
+                </li>
+                <li><a href="qna.html">Q&A</a></li>
+				<li><a href="public/login.html" class="active">로그인</a></li>
+                <li><a href="#contact" class="btn-contact">문의하기</a></li>
+            </ul>
+        </div>
+    </nav>	 
+<section class="hero">
+    <video class="bg-video" playsinline autoplay muted loop>
+        <source src="assets/mp4/bg.mp4" type="video/mp4" />
+        <source src="video/hero-bg.mp4" type="video/mp4" />
+    </video>
+    <div class="hero-background"></div>
+    <div class="container">
+        <!--<div class="hero-content">
+            <h1 class="hero-title">
+                <span class="highlight">신뢰</span>와 <span class="highlight">혁신</span>으로<br>
+                결제의 미래를 만듭니다
+            </h1>
+            <div class="hero-buttons">
+                <a href="#services" class="btn btn-primary">서비스 알아보기</a>
+                </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">7+</div>
+                    <div class="stat-label">년간 운영 노하우</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">최저</div>
+                    <div class="stat-label">업계 수수료율</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">100%</div>
+                    <div class="stat-label">커스터마이징 가능</div>
+                </div>
+            </div>
+        </div>
+    </div>-->
+    <div class="scroll-indicator">
+        <div class="mouse"></div>
+        <span>Scroll Down</span>
+    </div>
+</section>
+	<section class="about-us">
+    <div class="about-container">
+        <div class="about-image">
+            <img src="assets/img/intro.png" alt="시스템 사진">
+        </div>
+
+        <div class="about-content">
+            <h2 class="section-title">회사 소개</h2>
+            <p class="subtitle">CEO 인사말 및 비전</p>
+            
+          <div class="greeting">
+            <h3>혁신을 선도하는 우리의 가치</h3>
+            <p> 그간 저희는 (주)에이닐에프엔피, (주)페이투스, (주)웰컴, (주)홀빅, (주)씨드페이먼츠, (주)위루트, (주)코페이, (주)겔럭시아머니트리, (주)다날 등 전자결제 대행업체의 지점, 총판 회사로써 신뢰를 쌓아왔습니다. 이는 저희를 격려해 주시고 발전시켜 주신 여러 협력사와 임직원 일동 모두의 노력이 있었기에 가능한 일이었습니다. 이에 저희는 2025년 6월PG사의 지점으로 지위가 승격됨에 따라 온라인쇼핑몰 기업 및 프렌차이즈 업체 등에 직접 결제서비스를 제공할 수 있게 되었습니다. 앞으로도 저희 모든 임직원 일동은 보다 나은 신뢰로 여러분과 함께 사업을 만들어 가겠습니다. 최선을 다해 고객 여러분께 밝고 따뜻한 영향을 드리는 기업이 되고자 모든 노력을 다하겠습니다.</p>
+            <p><h4>많은 성원과 응원 부탁드립니다.</h4></p>
+              <p><span class="ceo-name"><h4>대표이사 김준섭 배상</h4></span></p>
+          </div>
+     </div>
+    </div>
+</section>
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">우리의 <span class="highlight">서비스</span></h2>
+                <p class="section-subtitle">다양한 결제 솔루션으로 비즈니스 성장을 지원합니다</p>
+            </div>
+            <div class="services-grid">
+                <a href="pg-service.html" class="service-card" data-aos="zoom-in">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>PG서비스</h3>
+                    <p>안전하고 빠른</p> <p>온라인 결제 솔루션</p>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+				<a href="kiosk01/index.html" class="service-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-cash-register"></i>
+                    </div>
+                    <h3>키오스크</h3>
+					<p>완벽한 무인주문</p><p>시스템으로</p><p>인건비 절감과</p>
+                    <p>매출 극대화를 </p><p>동시에 실현하세요</p>
+                    <div class="service-arrow">
+                        <i class="fas fa-user-chec"></i>
+                    </div>
+                </a>
+               <a href="subscription.html" class="service-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-sync-alt"></i>
+                    </div>
+                    <h3>정기결제</h3>
+                    <p>자동화된 구독 결제 시스템</p>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+                <a href="table-order.html" class="service-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>테이블오더</h3>
+                    <p>식음료 업계 특화 <p></p>주문결제 시스템</p>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+			<a href="jewelry.html" class="service-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3>쥬얼리 전용 단말기</h3>
+					<p>고가 쥬얼리를 위한 </p><p>쥬얼리 전용 결제 서비스</p>
+                    <p>초기 비용 없이</p>
+                    <p>전용 결제 서비스&nbsp;</p>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+                <a href="merchant-management.html" class="service-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>가맹점관리</h3>
+                    <p>통합 관리 시스템으로 </p><p>효율적인 운영</p>
+                    <div class="service-arrow">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">간편한 <span class="highlight">도입 절차</span></h2>
+                <p class="section-subtitle">3단계로 쉽고 빠르게 시작하세요</p>
+            </div>
+            <div class="process-steps">
+                <div class="process-step" data-aos="fade-right">
+                    <div class="step-number">01</div>
+                    <div class="step-content">
+                        <h3>상담 및 문의</h3>
+                        <p>비즈니스 특성과 요구사항을 파악하여 최적의 솔루션을 제안합니다</p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-right" data-aos-delay="100">
+                    <div class="step-number">02</div>
+                    <div class="step-content">
+                        <h3>계약 및 설정</h3>
+                        <p>간편한 계약 절차와 맞춤형 시스템 설정을 진행합니다</p>
+                    </div>
+                </div>
+                <div class="process-step" data-aos="fade-right" data-aos-delay="200">
+                    <div class="step-number">03</div>
+                    <div class="step-content">
+                        <h3>운영 시작</h3>
+                        <p>테스트 완료 후 즉시 결제 서비스를 시작하실 수 있습니다</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+	<section class="partner-logos">
+		<div class="container">
+        	<h2 class="section-title logo-section-title">함께하는 회사들</h2>
+        	<div class="logo-divider-container">
+            	<div class="red-divider"></div>
+            	<h4 class="logo-subtitle">책임 있는 금융으로 더 큰 미래를 만듭니다.</h4>
+        	</div>
+    	</div>
+        <div class="logo-track-container">
+            <div class="logo-track">
+                <img src="assets/img/logo/danal.png" alt="파트너 로고 1">
+                <img src="assets/img/logo/daw.png" alt="파트너 로고 2">
+                <img src="assets/img/logo/galaxia.png" alt="파트너 로고 3">
+                <img src="assets/img/logo/ringo.png" alt="파트너 로고 4">
+                <img src="assets/img/logo/seed.png" alt="파트너 로고 5">
+                <img src="assets/img/logo/wb.png" alt="파트너 로고 6">
+                <img src="assets/img/logo/wisspay.png" alt="파트너 로고 7">
+                <img src="assets/img/logo/danal.png" alt="파트너 로고 1">
+                <img src="assets/img/logo/daw.png" alt="파트너 로고 2">
+                <img src="assets/img/logo/galaxia.png" alt="파트너 로고 3">
+                <img src="assets/img/logo/ringo.png" alt="파트너 로고 4">
+                <img src="assets/img/logo/seed.png" alt="파트너 로고 5">
+                <img src="assets/img/logo/wb.png" alt="파트너 로고 6">
+                <img src="assets/img/logo/wisspay.png" alt="파트너 로고 7">
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <h2>지금 바로 <span class="highlight">시작하세요</span></h2>
+                    <p>전문 상담팀이 친절하게 안내해드립니다</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div>
+                                <h4>전화 문의</h4>
+                                <p>1522-7267</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div>
+                                <h4>이메일</h4>
+                                <p>hnb2022@naver.com</p>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>운영 시간</h4>
+                                <p>평일 09:00 - 18:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="fade-left">
+                    <iframe 
+                        src="https://naver.me/G8hz1vRL" 
+                        width="100%" 
+                        height="600px" 
+                        frameborder="0" 
+                        style="border-radius: 8px;">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div style="background:#fff;display:inline-block;padding:10px 18px;border-radius:6px;margin-bottom:4px;">
+                            <img src="assets/logo.png" alt="베스트페이먼츠" style="height:44px;width:auto;display:block;"/>
+                        </div>
+                    </div>
+                    <p class="footer-desc">
+                        신뢰와 혁신으로 결제의 미래를 만드는<br>
+                        전자결제대행 전문기업
+                    </p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>서비스</h4>
+                    <ul class="footer-links">
+                        <li><a href="pg-service.html">PG서비스</a></li>
+                        <li><a href="subscription.html">정기결제</a></li>
+                        <li><a href="table-order.html">테이블오더</a></li>
+						<li><a href="jewelry.html">주얼리전용결제</a></li>
+                        <li><a href="merchant-management.html">가맹점관리</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>고객지원</h4>
+                    <ul class="footer-links">
+                        <li><a href="qna.html">Q&A</a></li>
+                        <li><a href="#contact">문의하기</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">개인정보처리방침</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>회사정보</h4>
+                    <ul class="footer-info">
+                        <li><i class="fas fa-building"></i> 베스트페이먼츠 BestPayments</li>
+                        <li><i class="fas fa-map-marker-alt"></i>서울 본사 사업소</li>
+                        <li>서울특별시 서초구 서초대로55길 17</li>
+                        <li><i class="fas fa-map-marker-alt"></i>안산 지사 사업소</li>
+                        <li>경기도 안산시 단원구 고잔동757-1</li>
+						<li><i class="fas fa-phone"></i> 1522-7267</li>
+                        <li><i class="fas fa-envelope"></i> hnb2022@naver.com</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 베스트페이먼츠 BestPayments. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
