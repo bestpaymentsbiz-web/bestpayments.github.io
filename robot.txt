@@ -1,8 +1,15 @@
-# 1. 모든 검색엔진 로봇에게 공통 적용 (구글, 네이버, 빙, 다음 등 전체)
+# ==========================================
+# robots.txt — best-payments.com
+# ==========================================
+
+# 모든 검색엔진 공통 허용
 User-agent: *
 Allow: /
-Allow: /index.html
-Allow: /assets/
 
-# 2. 사이트맵 위치 알려주기 
+# 크롤링 불필요한 경로는 차단
+Disallow: /admin/
+Disallow: /api/
+Disallow: /*.json$
+
+# 사이트맵
 Sitemap: https://best-payments.com/sitemap.xml
