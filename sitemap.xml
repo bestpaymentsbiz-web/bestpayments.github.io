@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- 메인 페이지 -->
+  <url>
+    <loc>https://best-payments.com/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- 키오스크 -->
+  <url>
+    <loc>https://best-payments.com/kiosk.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 키오스크 상세 (kiosk01 폴더 - index.html이 있다면) -->
+  <url>
+    <loc>https://best-payments.com/kiosk01/</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- 가맹점 관리 -->
+  <url>
+    <loc>https://best-payments.com/merchant-management.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- PG 서비스 -->
+  <url>
+    <loc>https://best-payments.com/pg-service.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 테이블 오더 -->
+  <url>
+    <loc>https://best-payments.com/table-order.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- 구독 / 요금제 -->
+  <url>
+    <loc>https://best-payments.com/subscription.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Q&A / 고객센터 -->
+  <url>
+    <loc>https://best-payments.com/qna.html</loc>
+    <lastmod>2026-05-19</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>
