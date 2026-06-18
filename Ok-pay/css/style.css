@@ -700,4 +700,115 @@ img { display: block; max-width: 100%; }
   .nav-toggle { display: none !important; }
 }
 
+/* ㅡㅡ 약관/방침 푸터 링크 ㅡㅡ */
+.footer-legal {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-size: .78rem;
+  margin-top: 6px;
+}
+.footer-legal button {
+  background: none;
+  border: none;
+  padding: 0;
+  font: inherit;
+  color: #555;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.footer-legal button:hover { color: var(--black); }
+.footer-legal .legal-divider { color: #999; }
+
+/* ㅡㅡ 약관/방침 모달 ㅡㅡ */
+.legal-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, .55);
+  z-index: 1000;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+}
+.legal-modal-overlay.open { display: flex; }
+.legal-modal {
+  background: var(--white);
+  border-radius: var(--r);
+  width: 100%;
+  max-width: 720px;
+  max-height: 84vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.legal-modal-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 22px;
+  background: var(--yellow);
+  flex-shrink: 0;
+}
+.legal-modal-header h3 {
+  font-size: 1.05rem;
+  font-weight: 900;
+  color: var(--black);
+}
+.legal-modal-close {
+  background: none;
+  border: none;
+  font-size: 1.4rem;
+  line-height: 1;
+  cursor: pointer;
+  color: var(--black);
+  padding: 4px 8px;
+}
+.legal-modal-body {
+  padding: 22px 26px;
+  overflow-y: auto;
+  font-size: .88rem;
+  color: var(--text);
+  line-height: 1.7;
+}
+.legal-modal-body h4 {
+  font-size: .96rem;
+  font-weight: 800;
+  color: var(--black);
+  margin: 22px 0 8px;
+}
+.legal-modal-body h4:first-child { margin-top: 0; }
+.legal-modal-body p { margin-bottom: 10px; }
+.legal-modal-body ul,
+.legal-modal-body ol { margin: 8px 0 14px 20px; }
+.legal-modal-body li { margin-bottom: 6px; }
+.legal-modal-body table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 10px 0 18px;
+  font-size: .82rem;
+}
+.legal-modal-body th,
+.legal-modal-body td {
+  border: 1px solid #e3e3e3;
+  padding: 8px 10px;
+  text-align: left;
+  vertical-align: top;
+}
+.legal-modal-body th { background: var(--gray); font-weight: 700; }
+.legal-modal-body .legal-note {
+  background: var(--gray);
+  border-radius: 8px;
+  padding: 10px 14px;
+  font-size: .8rem;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+@media (max-width: 600px) {
+  .legal-modal { max-height: 90vh; }
+  .legal-modal-body { padding: 18px; }
+}
+
 ```
