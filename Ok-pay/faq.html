@@ -11,9 +11,31 @@
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<script src="js/partials.js"></script>
-<script>Partials.header();</script>
-<script>Partials.ticker();</script>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="index.html" class="logo-wrap">
+      <img src="assets/ok-payback-logo.png" srcset="assets/ok-payback-logo@2x.png 2x" alt="Ok-페이백 로고">
+    </a>
+    <button class="nav-toggle" onclick="toggleNav()" aria-label="메뉴 열기">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="index.html">신용카드한도이용 Ok-페이백</a>
+      <a href="card-cash.html">신용카드한도이용</a>
+      <a href="gift-card.html">상품권현금화</a>
+      <a href="mobile-pay.html">소액결제현금화</a>
+      <a href="faq.html">자주묻는질문</a>
+    </nav>
+  </div>
+</header>
+<div class="ticker" aria-hidden="true">
+  <div class="ticker-track">
+    <span>✅ 신용카드 한도이용</span><span>⚡ 3분 즉시 입금</span>
+    <span>🔒 100% 안전 합법 거래</span><span>📞 24시간 365일 상담</span>
+    <span>💳 모든 카드사 이용 가능</span><span>🎁 상품권 최대 92%</span><span>📱 소액결제 최대 88%</span>
+    <span>✅ 신용카드 한도이용</span><span>⚡ 3분 즉시 입금</span>
+    <span>🔒 100% 안전 합법 거래</span><span>📞 24시간 365일 상담</span>
+    <span>💳 모든 카드사 이용 가능</span><span>🎁 상품권 최대 92%</span><span>📱 소액결제 최대 88%</span>
+  </div>
+</div>
 
 <div class="page-hero">
   <div class="wrap">
@@ -85,19 +107,49 @@
       </div>
     </div>
 
-    <div class="cta-box">
-      <h3>원하는 답변을 못 찾으셨나요?</h3>
-      <p>24시간 상담 전화 또는 카카오톡으로 바로 문의해주세요</p>
+    <div style="background:var(--black);border-radius:var(--r);padding:36px;text-align:center;color:var(--white);margin-top:48px;">
+      <h3 style="font-size:1.3rem;margin-bottom:10px;color:var(--yellow);">원하는 답변을 못 찾으셨나요?</h3>
+      <p style="opacity:.7;margin-bottom:24px;">24시간 상담 전화 또는 카카오톡으로 바로 문의해주세요</p>
     </div>
   </div>
 </section>
 
-<script>Partials.cs();</script>
-<script>Partials.footer();</script>
-<script>Partials.legalModal();</script>
-<script>Partials.floatButtons();</script>
-
-<script src="js/legal-content.js"></script>
+<section class="cs-section" id="contact">
+  <div class="wrap">
+    <h2 class="cs-title">Ok-페이백 고객센터</h2>
+    <p class="cs-sub">365일 24시간 친절 상담 대기중</p>
+    <div class="cs-btns">
+      <a href="tel:010-5685-0152" class="cs-btn-call"><span>📞</span> 전화상담</a>
+      <a href="https://open.kakao.com/o/sjM2rXzi" target="_blank" class="cs-btn-kakao"><span>💬</span> 카톡상담</a>
+    </div>
+  </div>
+</section>
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-logo">
+      <img src="assets/ok-payback-logo.png" srcset="assets/ok-payback-logo@2x.png 2x" alt="Ok-페이백">
+      <p>정확하고 빠른 선금 서비스<br>24시간 운영</p>
+    </div>
+    <div class="footer-col"><h4>서비스</h4><ul>
+      <li><a href="card-cash.html">신용카드 한도이용</a></li>
+      <li><a href="gift-card.html">상품권 현금화</a></li>
+      <li><a href="mobile-pay.html">소액결제 현금화</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>고객지원</h4><ul>
+      <li><a href="process.html">이용방법</a></li>
+      <li><a href="faq.html">자주묻는질문</a></li>
+      <li><a href="#contact">상담신청</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 Ok-페이백 All rights reserved. | 신용카드 전문 플랫폼</p>
+    <p>본 서비스는 합법적인 물품 거래를 기반으로 합니다. 불법 카드깡과 무관합니다.</p>
+  </div>
+</footer>
+<div class="float-wrap">
+  <a href="tel:010-5685-0152" class="float-btn fb-call" title="전화상담">📞</a>
+  <a href="https://open.kakao.com/o/sjM2rXzi" target="_blank" class="float-btn fb-kakao" title="카카오톡">💬</a>
+</div>
 <script src="js/main.js"></script>
 </body>
 </html>
