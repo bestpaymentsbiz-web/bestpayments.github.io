@@ -247,7 +247,6 @@ function createTableRow(data, timeStr) {
         <tr>
             <td>${data.name}</td>
             <td>${data.amount}</td>
-            <td>${t}</td>
             <td>${data.duration}</td>
             <td><span class="status-button">입금완료</span></td>
         </tr>
