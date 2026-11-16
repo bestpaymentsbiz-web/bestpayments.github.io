@@ -39,6 +39,17 @@
         src="https://www.facebook.com/tr?id=1018912607575460&ev=PageView&noscript=1"
         /></noscript>
         <!-- End Meta Pixel Code -->
+    <style>
+    /* 모바일에서 히어로 상담 이미지 표시 */
+    @media (max-width: 1024px) {
+        .main-top { height: auto !important; max-height: none !important; overflow: visible !important; }
+        .main-top .container { flex-wrap: wrap !important; }
+        .main-top-img { display: block !important; visibility: visible !important; opacity: 1 !important;
+            position: static !important; flex: 0 0 100% !important; width: 100% !important;
+            max-width: 360px !important; height: auto !important; margin: 32px auto 0 !important; transform: none !important; }
+        .main-top-img img { display: block !important; width: 100% !important; height: auto !important; max-width: 100% !important; }
+    }
+    </style>
 </head>
 
 <body>
@@ -91,19 +102,19 @@
         <div class="container">
             <div class="main-top-txt">
                 <p class="main-top-badge">
-                    <i class="fas fa-shield-alt"></i> 신금융  파트너스
+                    <i class="fas fa-shield-alt"></i> <span style="color: green;">신금융 체인지론</span>
                 </p>
                 <p class="title">
-                    <span style="color: green;">빠르고</span><span class="highlight">  "간편하게"</span> <br>
+                    <span style="color: white;">빠르고</span><span class="highlight">"간편하게"</span> <br>
                     누구나 쉽게 할 수 있습니다
                 </p>
-                <p class="sub-title">
+                <!--<p class="sub-title">
                    B2B리셀참여<br>
                     <strong>개인정보를 보호 합니다</strong>
-                </p>
+                </p>-->
                 <div class="hero-cta-wrap">
                     <a href="tel:31141777" class="quick-btn" style="background-color: #ffffff; color: #333333; border: 1px solid #dddddd;" onclick="if(typeof trackLead==='function') trackLead('CallLead');">
-                        <i class="fas fa-phone-alt" style="color: #0066cc;"></i> 상담 신청
+                        <i class="fas fa-phone-alt" style="color: #0066cc;"></i> 문의 3114-1777
                     </a>
                     
                 </div>
@@ -117,22 +128,22 @@
 <!-- ===== 체인지론이란? ===== -->
 <div class="main-what">
     <div class="container">
-        <p class="section-label">B2B 리셀마켓</p>
+        <!--<p class="section-label">B2B 리셀마켓</p>-->
         <h2 class="what-title">
             <span style="color: #0066cc;">에스크로</span> <span style="color: #28a745;">선금 서비스</span><br>
             
         </h2>
         <p class="what-desc">
             <!--신용점수·직업·성별·소득을 따지지 않습니다.<br>-->
-            본인 카드 한도만 있으면 누구나 신청 가능합니다.
+            본인 카드 한도가 있다면 누구나 신청 가능합니다.
         </p>
 
         <div class="what-grid">
             <div class="what-item">
                 <div class="what-icon"><i class="fas fa-mobile-alt"></i></div>
-                <h3>휴대폰<br> 간편결제</h3>
+                <h3>휴대폰 간편결제</h3>
                 <!--<p><span style="color: #ff8c00;">간편인증</span></p>--><br>
-                <span class="what-tag">3만 ~ 000만원</span>
+                <span class="what-tag">3만 ~ 00만원</span>
             </div>
 
             <div class="what-divider">
@@ -141,7 +152,7 @@
 
             <div class="what-item">
                 <div class="what-icon"><i class="fas fa-credit-card"></i></div>
-                <h3>신용카드<br> 현금화</h3>
+                <h3>신용카드 한도이용</h3>
                 <!--<p>모든 신용카드 이용가능</p>--><br>
                 <span class="what-tag">12개월 할부가능</span>
             </div>
@@ -151,8 +162,8 @@
             <div class="what-feature-item">
                 <i class="fas fa-coins"></i>
                 <div>
-                    <strong>3만원부터 신청 가능</strong>
-                    <span>소액도 정성껏 진행합니다</span>
+                    <strong>3만원부터 신청</strong>
+                    <span>수수료를 일체<br> 받지 않겠습니다.</span>
                 </div>
             </div>
 
@@ -160,23 +171,23 @@
                 <i class="fas fa-bolt"></i>
                 <div>
                     <strong>평균 5분 이내 입금</strong>
-                    <span>본인 명의 휴대폰만 있으면 OK</span>
+                    <span>본인 명의 휴대폰만<br> 있으면 OK</span>
                 </div>
             </div>
 
             <div class="what-feature-item">
                 <i class="fas fa-headset"></i>
                 <div>
-                    <strong>365일 24시간 운영</strong>
-                    <span>주말·공휴일 관계없이<br>상담 가능</span>
+                    <strong>24시간 신청가능</strong>
+                    <span>공휴일 연중무휴<br>편안한 상담</span>
                 </div>
             </div>
 
             <div class="what-feature-item">
                 <i class="fas fa-check-circle"></i>
                 <div>
-                    <strong>미납·연체 있어도 가능</strong>
-                    <span>기존 대출 여부와 관계없이<br>신청 가능</span>
+                    <strong>핀테크 체인지론</strong>
+                    <span>기존 대출 여부와<br> 상관없이 가능</span>
                 </div>
             </div>
         </div>
@@ -194,16 +205,16 @@
         <div class="container">
             <div class="main-introduce-title fade-up">
                 <h2 class="title">
-                    <span class="highlight">10초만에 알아보는</span><br>
-                    <span class="introduce-brand">오케이캐시백 서비스!</span>
+                    <span class="highlight">5초만에 알아보는</span><br>
+                    <span class="introduce-brand">Ok -캐시백</span>
                 </h2>
-                <p class="subtitle">
+                <!--<p class="subtitle">
                     복잡한 절차 없이<br>
                     카톡 한통으로 써보세요!
                 </p>
                 <a href="product.html" class="bottom-btn hide-mobile">
                     상품 상세설명 <i class="fas fa-arrow-right"></i>
-                </a>
+                </a>-->
             </div>
             <div class="main-introduce-cards">
                 <div class="card-wrapper slide-in-left">
@@ -212,8 +223,8 @@
                             <img src="img/main-intro-2.png">
                         </div>
                         <div class="card-content">
-                            <p>금액무관</p>
-                            <h3>3만원부터 누구나 가능한<br>신개념 대출 서비스!</h3>
+                            <p>B2B 보안결제</p>
+                            <h3>신개념 체인지론 출시<br>에스트로 선금 서비스</h3>
                         </div>
                     </div>
                 </div>
@@ -223,8 +234,8 @@
                             <img src="img/main-intro-4.png">
                         </div>
                         <div class="card-content">
-                            <p>95% 이상의 승인률</p>
-                            <h3>본인 휴대폰만 있다면?<br>신청 후 👉 5분 내 입금!</h3>
+                            <p>고객 만족도 1위</p>
+                            <h3>개인정보 보호법 준수<br>신속 정확한 업무처리</h3>
                         </div>
                     </div>
                 </div>
@@ -234,8 +245,8 @@
                             <img src="img/main-intro-3.png">
                         </div>
                         <div class="card-content">
-                            <p>빠른 입금을 위한</p>
-                            <h3>전문 상담원이 24시간 대기!</h3>
+                            <p>98% 승인율</p>
+                            <h3>핸드폰 간편인증<br>SJ플랫폼 리셀마켓</h3>
                         </div>
                     </div>
                 </div>
@@ -245,8 +256,8 @@
                             <img src="img/main-intro-1.png">
                         </div>
                         <div class="card-content">
-                            <p>기대출 상관없이</p>
-                            <h3>신청하면 바로 입금돼요!</h3>
+                            <p>Ok캐시 로켓배송</p>
+                            <h3>신청하면 본인통장에<br>즉시 입금됩니다</h3>
                         </div>
                     </div>
                 </div>
@@ -264,7 +275,7 @@
 <!-- ===== 대출 vs 체인지론 비교 ===== -->
 <section class="main-compare">
     <div class="container fade-up">
-        <p class="section-label">왜 오케이캐시백인가요?</p>
+        <!--<p class="section-label">왜 오케이캐시백인가요?</p>-->
         <h2 class="compare-title">
             대출보다 <span class="compare-highlight">확실히</span> 낫습니다
         </h2>
@@ -281,7 +292,7 @@
 
             <div class="ct-cards">
                 <div class="ct-card ct-card-good">
-                    <div class="ct-card-head">오케이캐시백 서비스 ✨</div>
+                    <div class="ct-card-head">Ok캐시 체인지론 ✨</div>
                     <div class="ct-card-row"><i class="fas fa-check-circle"></i> 평균 5분</div>
                     <div class="ct-card-row"><i class="fas fa-check-circle"></i> 무관</div>
                     <div class="ct-card-row"><i class="fas fa-check-circle"></i> 없음</div>
@@ -479,9 +490,9 @@
             <p class="review-cta-sub">직접 확인해보세요</p>
             <h2 class="review-cta-title">정말 많은 분들이 쓰냐구요?</h2>
             <p class="review-cta-desc">네🤭... 이미 수만 명이 쓰고 있어요!</p>
-            <a href="review.html" class="review-cta-btn">
+            <!--<a href="review.html" class="review-cta-btn">
                 실제 후기 보러가기 →
-            </a>
+            </a>-->
         </div>
     </div>
 
