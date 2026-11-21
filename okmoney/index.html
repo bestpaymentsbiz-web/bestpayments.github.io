@@ -57,8 +57,8 @@
     .main-top .main-top-txt { margin-left: 0 !important; align-items: center !important; text-align: center !important; }
     .main-top .main-top-badge { align-self: center !important; }
     .main-top .hero-cta-wrap { align-items: center !important; }
-    /* 상단 히어로 배경 딥네이비 */
-    .main-top { background-color: #1B2A41 !important; }
+    /* 상단 히어로 배경 차콜 → 네이비 그라데이션 */
+    .main-top { background: linear-gradient(135deg, #2E3238 0%, #1B2A41 100%) !important; }
     /* 배지 배경 골드 */
     .main-top .main-top-badge { background: #F3E2A9 !important; border-color: #F3E2A9 !important; }
     /* 배지 글씨 2px 키움 (PC 16→18, 모바일 14→16) */
@@ -229,7 +229,7 @@
         <div class="what-grid">
             <div class="what-item">
                 <div class="what-icon"><i class="fas fa-mobile-alt"></i></div>
-                <h3>휴대폰 간<br>편결제</h3>
+                <h3>휴대폰 <br>간편결제</h3>
                 <!--<p><span style="color: #ff8c00;">간편인증</span></p>--><br>
                 <span class="what-tag">3만 ~ 00만원</span>
             </div>
@@ -251,7 +251,7 @@
                 <i class="fas fa-coins"></i>
                 <div>
                     <strong>희망캐시 신청</strong>
-                    <span>몬인명의 휴대폰<br> 있으면 OK</span>
+                    <span>본인명의 휴대폰<br> 있으면 OK</span>
                 </div>
             </div>
 
@@ -295,6 +295,14 @@
 <section class="main-compare">
     <div class="container fade-up">
         <!--<p class="section-label">왜 오케이캐시백인가요?</p>-->
+        <div class="process-cta" style="text-align: center;">
+            <a href="tel:3114-1777"
+            onclick="if(typeof trackLead==='function') trackLead('CompleteRegistration');"
+            class="btn-secondary"
+            style="display: inline-flex; width: fit-content; align-self: center; margin: 0 auto; padding: 10px 20px;">
+                <!--<i class="fas fa-phone"></i>--> 신청 3114 - 1777
+            </a>
+        </div><br>
         <h2 class="compare-title">
             대출보다 <span class="compare-highlight">확실히</span> 낫습니다
         </h2>
