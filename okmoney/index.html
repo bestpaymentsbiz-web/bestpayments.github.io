@@ -53,6 +53,22 @@
     @media (max-width: 768px) {
         .main-top-img { margin-top: 56px !important; }
     }
+    /* 상단 히어로 문구 PC에서도 가운데 정렬 */
+    .main-top .main-top-txt { margin-left: 0 !important; align-items: center !important; text-align: center !important; }
+    .main-top .main-top-badge { align-self: center !important; }
+    .main-top .hero-cta-wrap { align-items: center !important; }
+    /* 상단 히어로 배경 딥네이비 */
+    .main-top { background-color: #1B2A41 !important; }
+    /* 배지 배경 골드 */
+    .main-top .main-top-badge { background: #F3E2A9 !important; border-color: #F3E2A9 !important; }
+    /* 배지 글씨 2px 키움 (PC 16→18, 모바일 14→16) */
+    .main-top .main-top-badge { font-size: 18px !important; }
+    @media (max-width: 768px) { .main-top .main-top-badge { font-size: 16px !important; } }
+    /* 희망 버튼 아래~다음 섹션 경계 간격을 제목~버튼 간격과 같게 */
+    @media (min-width: 769px) and (max-width: 1024px) { .main-top { padding-bottom: 36px !important; } }
+    @media (max-width: 768px) { .main-top { padding-bottom: 56px !important; } }
+    /* PC 상단 영역 높이 축소 (680px 고정 → 내용에 맞춰 위아래 여백 동일) */
+    @media (min-width: 1025px) { .main-top { height: auto !important; padding: 90px 0 118px !important; } }
     </style>
 </head>
 
@@ -106,7 +122,7 @@
         <div class="container">
             <div class="main-top-txt">
                 <p class="main-top-badge">
-                    <i class="fas fa-shield-alt" style="color: #0066cc;"></i> <span style="color: green;">신금융 체인지론</span>
+                    <i class="fas fa-shield-alt" style="color: #0066cc;"></i> <span style="color: #0B5D2A;">신금융 체인지론</span>
                 </p>
                 <p class="title">
                     <span style="color: white;">빠르고</span><span class="highlight">"간편하게"</span> <br>
@@ -122,9 +138,6 @@
                     </a>
                     
                 </div>
-            </div>
-            <div class="main-top-img">
-                <img src="img/main-top-2_2.gif" alt="오케이페이백 서비스 안내">
             </div>
         </div>
     </div>
@@ -194,6 +207,11 @@
         </div>
     </div>
 <!-- ===== 10초 소개 섹션 끝 ===== -->
+
+<!-- ===== 채팅 이미지 (헤더에서 분리) ===== -->
+<div class="main-chat-img" style="background: var(--bgcolor); padding: 60px 24px 0; text-align: center;">
+    <img src="img/main-top-2_2.gif" alt="오케이페이백 서비스 안내" style="display: block; width: 100%; max-width: 360px; height: auto; margin: 0 auto;">
+</div>
 
 <!-- ===== 체인지론이란? ===== -->
 <div class="main-what">
